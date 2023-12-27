@@ -51,7 +51,7 @@
     }
   }
 
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 599) {
     /* For tablets: */
     #tao-img-0{
         width: 500px;

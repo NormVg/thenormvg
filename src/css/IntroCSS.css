@@ -1,0 +1,16 @@
+h1{
+    color: whitesmoke;
+    font-size: 40px;
+}
+p{
+    color: #919191;
+    font-size: 20px;
+    text-align: left;
+    line-height: 28px;
+}
+#intro-box{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+}

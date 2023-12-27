@@ -3,3 +3,13 @@
     margin: 12px;
     position: fixed;
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    
+    #header-box img{
+        width: 75px;
+        position: unset;
+    }
+
+  }

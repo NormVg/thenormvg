@@ -26,9 +26,18 @@ a:hover{
   mask-image: linear-gradient(rgba(0, 0, 0, 1) 80%, transparent);
 }
 
-/* *{
-  border: white solid 1px;
-} */
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .App{
+    height: 82vh;
+    mask-image: linear-gradient(rgba(0, 0, 0, 1) 80%, transparent);
+  }
+}
+
+
+
+
+
 
 /*  THIS THE SCROLL-BARR */
 /* width */

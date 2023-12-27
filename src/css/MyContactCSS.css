@@ -1,0 +1,36 @@
+#vg-icon{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#vg-icon img{
+    width: 25px;
+    padding-right: 5px;
+    
+}
+
+#ico-ele-vg{
+    padding: 5px;
+    margin: 15px ;
+  
+}
+
+#vg-icon a{
+    font-family: 'K2D', sans-serif;
+    text-decoration: none;
+
+}
+
+#vg-icon span{
+    transition: all ease-in-out 300ms;
+    color: #919191;
+    border-bottom: 1px #919191 solid;
+}
+#vg-icon span:hover{
+    color: whitesmoke;
+    border-bottom: 1px white solid;
+}

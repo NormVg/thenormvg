@@ -21,7 +21,7 @@ export default function TAO() {
 
         <div id='tao-icon'>
             <a href="https://discord.gg/C3qWK3E5JW" target="_blank" rel="noopener noreferrer" className='tao-icon'><img src="/img/icon/discord-logo.svg" alt="discord-tao"   /></a>•
-            <a href="https://github.com/theAlphaOnes/" target="_blank" rel="noopener noreferrer" className='tao-icon'><img src="/img/icon/github-logo.svg" alt="github-tao"   /></a>•
+            <a href="https://github.com/TheAlphaOnes/" target="_blank" rel="noopener noreferrer" className='tao-icon'><img src="/img/icon/github-logo.svg" alt="github-tao"   /></a>•
             <a href="https://www.instagram.com/thealphaones/" target="_blank" rel="noopener noreferrer" className='tao-icon'><img src="/img/icon/instagram-logo.svg" alt="instagram-tao"   /></a>•
             <a href="https://twitter.com/TheAlphaOnesDev" target="_blank" rel="noopener noreferrer" className='tao-icon'><img src="/img/icon/twitter-logo.svg" alt="twitter-tao"   /></a>•
             <a href="https://www.youtube.com/channel/UCiTFCaaj4WGRVL5-BUXxCLw" target="_blank" rel="noopener noreferrer" className='tao-icon'><img src="/img/icon/youtube-logo.svg" alt="youtube-tao"   /></a>•

@@ -1,0 +1,24 @@
+#pj-list{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 4px;
+    column-gap: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+   #pj-list{
+    grid-template-columns: auto;
+   } 
+  }
+
+@media only screen and (min-width: 600px) {
+/* For tablets: */
+#pj-list{
+
+    grid-template-columns: 48% 48%;
+    row-gap: 10px;
+    column-gap: 18px;
+   
+}
+}

@@ -24,6 +24,8 @@ export default function HomePage() {
         <br />
         <hr />
         <MyContacts/>
+        <br />
+        
         
       </div>
     </div>

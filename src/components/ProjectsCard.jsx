@@ -1,12 +1,13 @@
 import React from 'react'
 
 import "../css/ProjectsCardCSS.css"
-export default function ProjectsCard() {
+export default function ProjectsCard({name,disc,link,img}) {
   return (
+    <a href={link} target="_blank" rel="noopener noreferrer" id='pj-card-a'>
     <div id='projects-card-box'>
-      <div><h2>MyProjects</h2> <img className='project-logo' src="https://daddyjs.vercel.app/static/logo.svg" alt="project logo" /></div>
-      <div><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p> <img className='open-link-img' src="/img/icon/open-link.svg" alt="open projects link" /></div>
-
+        <h2>{name}</h2> <img className='project-logo' src={img || "/img/blank.png" } alt="project logo"  />
+        <p>{disc}</p> 
     </div>
+    </a>
   )
 }

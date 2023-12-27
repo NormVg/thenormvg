@@ -1,0 +1,44 @@
+#tao-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#tao-img-0{
+    width: 700px;
+}
+
+#tao-box p {
+    text-align: left;
+}
+#tao-box h1 a {
+    text-decoration: none;
+}
+#tao-box h1 a:hover{
+    color: #919191;
+}
+
+#tao-icon{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.tao-icon img{
+    width: 25px;
+}
+.tao-icon{
+    width: 25px;
+    margin: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #91919171;
+    transition: all ease-in-out 300ms
+}
+.tao-icon:hover{
+    border-bottom: 1px solid whitesmoke;
+}

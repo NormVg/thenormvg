@@ -7,7 +7,19 @@ body{
     background-position:bottom;
     background-color: black;
 }
-
+*{
+  color: whitesmoke;
+}
+a{
+  text-decoration: underline #91919171 1px;
+  color: whitesmoke;
+  margin-left: 1px;
+  transition: all ease-in-out 300ms  ;
+  
+}
+a:hover{
+  text-decoration: underline whitesmoke 1px;
+}
 .App{
   height: 89vh;
   overflow-y: scroll;
@@ -43,3 +55,9 @@ body{
 }
 
 /* END OF SCHROLL BAR */
+
+
+/* font-family: 'Italianno', cursive;
+font-family: 'K2D', sans-serif;
+font-family: 'VT323', monospace; */
+

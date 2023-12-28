@@ -5,7 +5,7 @@ export default function Intro() {
     <div id='intro-box'>
     <h1>Vishnu Gupta</h1>
     <p>
-    Hello! I'm Vishnu Gupta, but you might know me better as NormVg. At 18 years old, I wear multiple hats: I'm a full-stack developer with expertise in AI. Beyond coding, I'm the  founder and CEO of <a href="https://thealphaones-tao.netlify.app" target="_blank" rel="noopener noreferrer"> TheAlphaOnes </a> , a burgeoning tech startup. I also spearhead of <a href="https://discord.gg/C3qWK3E5JW" target="_blank" rel="noopener noreferrer">TAO Community</a> a vibrant 'build in public' developer community.
+    Hello! I'm Vishnu Gupta, but you might know me better as NormVg. At 18 years old, I wear multiple hats: I'm a full-stack developer with intrested in AI. Beyond coding, I'm the  founder and CEO of <a href="https://thealphaones-tao.netlify.app" target="_blank" rel="noopener noreferrer"> TheAlphaOnes </a> , a burgeoning tech startup. I also spearhead of <a href="https://discord.gg/C3qWK3E5JW" target="_blank" rel="noopener noreferrer">TAO Community</a> a vibrant 'build in public' developer community.
 <br /><br />
 My passion for technology and engineering knows no bounds. There's something exhilarating about bringing ideas to life, straight from the canvas of my dreams and imagination.
 <br /><br />

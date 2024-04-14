@@ -5,9 +5,9 @@ export default function Intro() {
     <div id='intro-box'>
     <h1>Vishnu Gupta</h1>
     <p>
-    Hello! I'm Vishnu Gupta, but you might know me better as NormVg. At 18 years old, I wear multiple hats: I'm a full-stack developer with intrested in AI. Beyond coding, I'm the  founder and CEO of <a href="https://thealphaones-tao.netlify.app" target="_blank" rel="noopener noreferrer"> TheAlphaOnes </a> , a burgeoning tech startup. I also spearhead of <a href="https://discord.gg/C3qWK3E5JW" target="_blank" rel="noopener noreferrer">TAO Community</a> a vibrant 'build in public' developer community.
+    Hello! I'm Vishnu Gupta, but you might know me better as NormVg. At 18 years old, I wear multiple hats: I'm a full-stack developer and Working with AI's a Lot. <br /> Beyond coding, I'm the  founder and CEO of <a href="https://thealphaones-tao.netlify.app" target="_blank" rel="noopener noreferrer"> TheAlphaOnes </a> , a "Crazy Shit" Development Team. <br />I also Leading of <a href="https://discord.gg/C3qWK3E5JW" target="_blank" rel="noopener noreferrer">TAO Community</a> of Crack Head's, who  'build in public' helaa yaa my kinda community right?? 
 <br /><br />
-My passion for technology and engineering knows no bounds. There's something exhilarating about bringing ideas to life, straight from the canvas of my dreams and imagination.
+My love for engineering and technology is limitless. Bringing thoughts to life directly from the blank slate of my fantasies and imagination is really satisfying and calming and making me crazy at the same time. and in part-time also taking part into hackathons and We also won one recently yeeee!!!!!
 <br /><br />
 Outside the digital realm, I'm a lover of hip-hop music. Occasionally, you might catch me penning down verses that resonate with my soul. Cooking is another realm where I find comfort, alongside indulging in movies and cherished moments with friends. Oh, and did I mention? I have a liking for engaging conversations. 
 <br /><br />

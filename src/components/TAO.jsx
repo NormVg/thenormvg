@@ -10,7 +10,7 @@ export default function TAO() {
         <p>
         We at <a href="https://thealphaones-tao.netlify.app" target="_blank" rel="noopener noreferrer">TheAlphaOnes</a> are more than simply a development team—we are a living example of creativity and enthusiasm driven by a deep love of technology. With a focus on hardware and software solutions, we are leading the way in creating the future.
          <br /><br />
-         TheAlphaOnes, founded and led by two passionate developers, Vishnu Gupta (CEO) and Akshat Khare (COO), represents the spirit of a lifelong innovation and innovative thinking. We rethink the living environment with youthful drive and invincible commitment to make sure our solutions stand out in the cyber world.
+         TheAlphaOnes, founded and led by two passionate developers, Vishnu Gupta  and Akshat Khare , represents the spirit of a lifelong innovation and innovative thinking. We rethink the living environment with youthful drive and invincible commitment to make sure our solutions stand out in the cyber world.
 
         <br /><br />
         In Vision to future, technology will be a natural part of everyday life, facilitating enriching and intuitive connections. To do this, we're committed to creating an exceptional user interface and user experience (UI/UX) that emphasises minimalism and serves an ecosystem of real-world functionality that we call "AURA Lifestyle". This ecosystem isn't just for us—it's a privilege extended to developers and inventors who share our passion and vision.

@@ -1,26 +1,24 @@
-
-body{
+body {
   background-image: url("../public/img/bg.jpg");
   background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:cover;
-    background-position:bottom;
-    background-color: black;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
+  background-color: black;
 }
-*{
+/* *{
   color: whitesmoke;
-}
-a{
+} */
+a {
   text-decoration: underline #91919171 1px;
   color: whitesmoke;
   margin-left: 1px;
-  transition: all ease-in-out 300ms  ;
-  
+  transition: all ease-in-out 300ms;
 }
-a:hover{
+a:hover {
   text-decoration: underline whitesmoke 1px;
 }
-.App{
+.App {
   height: 89vh;
   overflow-y: scroll;
   mask-image: linear-gradient(rgba(0, 0, 0, 1) 80%, transparent);
@@ -28,45 +26,45 @@ a:hover{
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-  .App{
+  .App {
     height: 82vh;
     mask-image: linear-gradient(rgba(0, 0, 0, 1) 80%, transparent);
   }
+
+  /* #prog-heading {
+    top: 75px !important;
+  }
+
+  #prog-con {
+
+    top: 115px !important;
+  } */
 }
-
-
-
-
-
 
 /*  THIS THE SCROLL-BARR */
 /* width */
 ::-webkit-scrollbar {
   width: 7px;
-
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  
   border-radius: 15px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #919191; 
+  background: #919191;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: whitesmoke; 
+  background: whitesmoke;
 }
 
 /* END OF SCHROLL BAR */
 
-
 /* font-family: 'Italianno', cursive;
 font-family: 'K2D', sans-serif;
 font-family: 'VT323', monospace; */
-

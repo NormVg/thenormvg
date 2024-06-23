@@ -1,8 +1,15 @@
 #pj-list{
-    display: grid;
+    /* display: grid;
     grid-template-columns: 50% 50%;
     row-gap: 4px;
-    column-gap: 4px;
+    column-gap: 4px; */
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
 
 @media only screen and (max-width: 768px) {

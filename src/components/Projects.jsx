@@ -48,7 +48,7 @@ export default function Projects() {
           title="Batman ChatRoom"
           content="Batman 2022 inspired terminal like web Chatroom"
           link="https://batmanchatroom.vercel.app/"
-          imag="kraken.gif"
+          imag="batman.gif"
         />
 
         {/* <ProjectCardNew
@@ -83,14 +83,14 @@ export default function Projects() {
           title="ChatBotGpt"
           content="A gpt-2 based custom chatbot which can be finetuned"
           link="https://github.com/NormVg/ChatBotGpt"
-          imag="kraken.gif"
+          imag="def.png"
         />
 
         <ProjectCardNew
           title="Dusic"
           content="A youtube based music player which I made because I hated ads"
           link="https://dusic.netlify.app/"
-          imag="kraken.gif"
+          imag="def.png"
         />
 
         {/* <ProjectCardNew

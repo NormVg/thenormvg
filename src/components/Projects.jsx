@@ -8,12 +8,7 @@ export default function Projects() {
     <div>
       <h1>My Projects</h1>
       <div id="pj-list">
-        <ProjectCardNew
-          title="Batman ChatRoom"
-          content="Batman 2022 inspired terminal like web Chatroom"
-          link="https://batmanchatroom.vercel.app/"
-          imag="batman.gif"
-        />
+        
 
         {/* <ProjectCardNew
           title="DevG"
@@ -29,8 +24,15 @@ export default function Projects() {
           imag="kraken.gif"
         />
 
+	<ProjectCardNew
+          title="AutoCaptionGenAI"
+          content="Seamlessly transcribe, translate, and generate subtitles from video files with precision."
+          link="https://github.com/NormVg/AutoCaptionGenAI"
+          imag="def.gif"
+        />
+
         <ProjectCardNew
-          title="JAM"
+          title="J.A.M"
           content="Just AppImage Manager for linux"
           link="https://github.com/TheAlphaOnes/jam"
           imag="def.png"
@@ -48,6 +50,13 @@ export default function Projects() {
           content="Eventually is a reimagining of journaling , dynamically provide Nostalgia and Calmness "
           link="https://github.com/NormVg/ChatBotGpt"
           imag="eventually.gif"
+        />
+
+	<ProjectCardNew
+          title="Batman ChatRoom"
+          content="Batman 2022 inspired terminal like web Chatroom"
+          link="https://batmanchatroom.vercel.app/"
+          imag="batman.gif"
         />
 
         <ProjectCardNew

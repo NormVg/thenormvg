@@ -37,6 +37,7 @@ h1{
     font-size: 60px;
     font-family: 'Italianno', cursive;
     font-weight: 100;
+    animation: slideInFromLeft 850ms forwards;
 }
 p{
     color: #919191;
@@ -45,6 +46,7 @@ p{
     line-height: 28px;
     font-family: 'K2D', sans-serif;
     font-weight: 100;
+    animation: slideInFromLeft 950ms forwards;
 }
 
 #home-box{

@@ -19,6 +19,10 @@ import sign from "@/assets/sign.png"
     position: fixed;
 }
 
+
+#header-box{
+  animation: slideInFromLeft 750ms forwards;
+}
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     

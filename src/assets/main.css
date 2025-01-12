@@ -1,0 +1,107 @@
+
+body {
+  background-image: url("../public/img/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
+  background-color: black;
+  color: #91919171;
+  /* height: calc(100vh - 2px); */
+  /* mask-image: linear-gradient(rgba(0, 0, 0, 1) 98%, transparent); */
+  /* mask-position: bottom; */
+  /* padding-bottom: 400px ; */
+}
+
+a {
+  text-decoration: underline #91919171 1px;
+  color: whitesmoke;
+  margin-left: 1px;
+  transition: all ease-in-out 300ms;
+}
+a:hover {
+  text-decoration: underline whitesmoke 1px;
+}
+#app {
+  
+  height: 89vh;
+  overflow-y: scroll;
+  mask-image: linear-gradient(rgba(0, 0, 0, 1) 80%, transparent);
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  /* .App {
+    height: 82vh;
+    mask-image: linear-gradient(rgba(0, 0, 0, 1) 80%, transparent);
+  } */
+
+  /* #prog-heading {
+    top: 75px !important;
+  }
+
+  #prog-con {
+
+    top: 115px !important;
+  } */
+}
+
+/*  THIS THE SCROLL-BARR */
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 15px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #919191;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
+
+/* END OF SCHROLL BAR */
+
+/* font-family: 'Italianno', cursive;
+font-family: 'K2D', sans-serif;
+font-family: 'VT323', monospace; */
+
+
+.from-left {
+
+  animation: slideInFromLeft 850ms forwards;
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+.slide-fade-enter-active {
+  transition: all 0.8s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
+}

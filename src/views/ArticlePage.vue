@@ -56,7 +56,7 @@ onMounted(async () => {
 .heading-box {
   /* color: #febaad; */
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -82,6 +82,21 @@ onMounted(async () => {
 .markdown-content p {
   width: 90%;
 }
+
+#cen-img{
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#cen-img img{
+  /* border: 1px solid red; */
+
+  width: 80%;
+}
+
 .markdown-content img {
   width: 30vw;
   margin: 0% auto !important;

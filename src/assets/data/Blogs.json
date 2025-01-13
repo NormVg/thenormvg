@@ -1,16 +1,8 @@
 [
     {
       "id": "article-1",
-      "title": "NEW - AI in Trading: The Future of F&O Markets",
-      "description": "Discover how artificial intelligence is reshaping futures and options trading with real-time insights and predictive analytics.",
+      "title": "Kraken: A Code Editor with a New Flavor", 
       "file": "kraken.md",
-      "date":"xx/mm/yy"
-    },
-    {
-      "id": "article-2",
-      "title": "NEW - Mastering Option Chains: A Beginner’s Guide",
-      "description": "A step-by-step guide to understanding option chains and leveraging them for smarter trading decisions.",
-      "file": "kraken.md",
-      "date":"xx/mm/yy"
+      "date":"13/1/25"
     }
   ]

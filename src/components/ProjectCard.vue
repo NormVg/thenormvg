@@ -10,6 +10,7 @@
 import deafutImg0 from "@/assets/code_img/def.gif";
 import deafutImg1 from "@/assets/code_img/def1.gif";
 import deafutImg2 from "@/assets/code_img/def2.gif";
+
 import { computed, ref } from "vue";
 
 const prop = defineProps({
@@ -34,7 +35,7 @@ const progBanner = computed(() => {
   if (prop.imag !== undefined) {
     return prop.imag;
   } else {
-    let randomValue = Math.floor(Math.random() * 3);
+    let randomValue = Math.floor(Math.random() * 4);
     if (randomValue === 0) {
       return deafutImg0;
     } else if (randomValue === 1) {

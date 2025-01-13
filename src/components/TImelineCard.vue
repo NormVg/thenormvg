@@ -1,17 +1,9 @@
 <template>
   <div id="tlc-box">
     <div id="tlc-circle"></div>
-    <div id="tlc-text" @mouseenter="()=>{isHover = true}" @mouseleave="()=>{isHover = false}" >
-    
-        
+  
 
-
-        <!-- <span v-if="!isHover"  class="span-block-animation" v-for="item, iter in prop.textLess.split(' ')" :key="item" :style="`animation-duration: calc(1s + ${iter*25}ms);`">{{ `${item} ` }} </span>
-        <span v-if="isHover"  class="span-block-animation" v-for="item, iter in prop.textMore.split(' ')" :key="item" :style="`animation-duration: calc(1s + ${iter*25}ms);`"> {{ `${item} ` }} </span> -->
-    </div>
-    
-
-    <div id="tlc-date">{{ prop.date }}</div>
+    <!-- <div id="tlc-date">{{ prop.date }}</div> -->
   </div>
 </template>
 
@@ -38,6 +30,8 @@ const isHover = ref(false)
 <style scoped>
 #tlc-box{
     margin: 0px 100px;
+    border:1px solid red;
+    height: 1000px;
     /* transition: all ease-in-out 2s; */
 
     /* margin-top: 1.7%; */
@@ -45,8 +39,8 @@ const isHover = ref(false)
 #tlc-circle {
   background-color: whitesmoke;
   border-radius: 100%;
-  width: 40px;
-  height: 40px;
+  width: 5px;
+  height: 5px;
   margin-left: 10px;
   margin-bottom: 5px;
 

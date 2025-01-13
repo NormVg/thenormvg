@@ -7,11 +7,15 @@
             <div id="tab-blog" :style="ActiveStyle[2]" @click="()=>{isActive = 2}">Blogs</div>
          </div>
     </div>
+    <Transition>
     <Code v-if="isActive === 0" />
+   </Transition>
 
-    <Design v-if="isActive === 1"  />
+   <Transition>
+    <Design v-if="isActive === 1"  /></Transition>
+   <Transition>
     <Blogs v-if="isActive === 2"  />
-
+   </Transition>
 
 </template>
 

@@ -3,7 +3,8 @@ import Intro from '@/components/Intro.vue';
 import TAO from '@/components/TAO.vue';
 import Studio from '@/components/Studio.vue';
 import Contacts from '@/components/Contacts.vue';
-import TimeLine from '@/components/TimeLine.vue';
+// import TimeLine from '@/components/TimeLine.vue';
+import TimelineNew from '@/components/TimelineNew.vue';
 </script>
 
 <template>
@@ -12,7 +13,7 @@ import TimeLine from '@/components/TimeLine.vue';
         <Intro/>
         <!-- <br />
         <br />
-        <TimeLine/> -->
+        <TimelineNew/> -->
         <br /><br />
         <br /><br />
         <hr />

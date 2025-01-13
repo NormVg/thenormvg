@@ -96,6 +96,7 @@ Join us as we learn, create, and inspire, paving the way for a brighter and more
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 10vh;
 }
 
 #tao-img-0 {

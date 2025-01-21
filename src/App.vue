@@ -6,8 +6,7 @@ import Header from "./components/Header.vue";
 <template>
   <Header/>
   
-  <!-- <RouterLink to="/">Home</RouterLink> -->
-  <!-- <RouterLink to="/about">About</RouterLink> -->
+
 
   <RouterView />
 </template>

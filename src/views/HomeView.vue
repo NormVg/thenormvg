@@ -5,6 +5,7 @@ import Studio from '@/components/Studio.vue';
 import Contacts from '@/components/Contacts.vue';
 import TimeLine from '@/components/TimeLine.vue';
 
+
 </script>
 
 <template>

@@ -3,19 +3,18 @@ import Intro from '@/components/Intro.vue';
 import TAO from '@/components/TAO.vue';
 import Studio from '@/components/Studio.vue';
 import Contacts from '@/components/Contacts.vue';
-// import TimeLine from '@/components/TimeLine.vue';
-import TimelineNew from '@/components/TimelineNew.vue';
+import TimeLine from '@/components/TimeLine.vue';
+
 </script>
 
 <template>
       <div id='home-box'>
       <div id='home-box-child'>
         <Intro/>
-        <!-- <br />
         <br />
-        <TimelineNew/> -->
-        <br /><br />
-        <br /><br />
+        <br />
+        <TimeLine/>
+   <br><br>
         <hr />
         <TAO/>
         <br />

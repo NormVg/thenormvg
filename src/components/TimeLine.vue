@@ -1,66 +1,92 @@
+<script setup>
+import { ref } from 'vue'
+import TimelineEvent from './TimelineEvent.vue'
+import JournalTimeLineJson from "@/assets/data/Timeline.json"
+const events = ref([...JournalTimeLineJson])
+
+
+</script>
+
 <template>
-  
-<div id="timeline-box">
-
-<div id="timeline-line"></div>
-
-<div id="tl-con">
-    <Vue3Marquee
+  <div class="timeline-container">
     
-        :duration="55"
+
+    <div class="timeline" >
+    <Vue3Marquee
+        
+        :duration="95"
         :pause-on-hover="true"
         :gradient="true"
         :gradient-color="[0, 0, 0]"
-        gradient-length="15%"
-    >
+        gradient-length="10%"
+        >
 
-        <TImelineCard/>
-        <TImelineCard/>
 
-        <TImelineCard/>
-        <TImelineCard/>
-        <TImelineCard/>
-
+      <div class="timeline-content">
+        <div class="line"></div>
+        <TimelineEvent
+          v-for="event in events"
+          :key="event.id"
+          :date="event.date"
+          :description="event.description"
+        />
+      </div>
+      
     </Vue3Marquee>
-</div>
+  </div>
 
-</div>
-
+  </div>
 </template>
 
-<script setup>
-import { Vue3Marquee } from 'vue3-marquee';
-import TImelineCard from './TImelineCard.vue';
-</script>
-
 <style scoped>
-#tl-con{
-    width: 98vw;
-    height: 100%;
-    
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    padding-top: 60px;
-    /* padding-top: 20%; */
+.timeline-container {
+  width: 100%;
+  /* background: #000; */
+  position: relative;
+  
+  color: white;
+  padding: 0px 0px;
+  
 }
 
-#timeline-box{
-
-height: 100px;
-position: relative;
-
-margin-bottom: 200px;
+.title {
+  text-align: left;
+  padding-left: 40px;
+  margin-bottom: 60px;
+  font-family: serif;
+  font-style: italic;
+  font-size: 2.5rem;
 }
 
-#timeline-line{
-    width: 98vw ;
-    height: 1px;
-    border-bottom:1px solid whitesmoke;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+.timeline {
+  width: 95vw;
+  position:  absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  position: relative;
+}
+
+.timeline-content {
+  display: flex;
+  position: relative;
+  white-space: nowrap;
+}
+
+.line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: white;
+  opacity: 0.3;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+    padding-left: 20px;
+  }
 }
 </style>

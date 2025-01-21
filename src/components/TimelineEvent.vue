@@ -1,107 +1,68 @@
-<script setup lang="ts">
-interface Props {
-  date: string
-  title: string
-  description: string
-}
-
-defineProps<Props>()
+<script setup>
+defineProps({
+  date: {
+    type: String,
+    required: true
+  },
+  description: {
+    type: String,
+    required: true
+  }
+})
 </script>
 
 <template>
-  <div class="timeline-event">
-    <div class="event-dot-container">
-      <div class="event-dot"></div>
+  <div class="timeline-card">
+    <div class="content">
+      <div class="date">{{ date }}</div>
+      <div class="description">{{ description }}</div>
     </div>
-    <div class="event-info">
-      <div class="event-date">{{ date }}</div>
-      <div class="event-title">{{ title }}</div>
-    </div>
-    <div class="event-tooltip">
-      <div class="event-description">{{ description }}</div>
-    </div>
+    <div class="dot"></div>
   </div>
 </template>
 
 <style scoped>
-.timeline-event {
+.timeline-card {
   font-family: 'K2D', sans-serif;
   font-weight: 100;
   position: relative;
   min-width: 300px;
-  margin: 0 100px;
-  cursor: pointer;
+  padding: 20px;
+  margin: 0 50px;
+  text-align: left;
+  color: white;
 }
 
-.event-dot-container {
-  height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 16%;
+.content {
+  margin-left: -35px;
 }
 
-.event-dot {
+.date {
+  font-size: 0.7rem;
+  opacity: 0.7;
+  margin-bottom: 5px;
+}
+
+.dot {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   width: 8px;
   height: 8px;
-  background: #fff;
+  background: white;
   border-radius: 50%;
 }
 
-.event-info {
-  position: relative;
-  text-align: left;
-  /* margin-top: 5px; */
-}
-
-.event-date {
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 4px;
-  font-weight: 400;
-}
-
-.event-title {
-  font-size: 20px;
-  color: #fff;
-  font-weight: 400;
-}
-
-.event-tooltip {
-  position: absolute;
-  top: -60px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(30, 30, 30, 0.95);
-  padding: 20px;
-  border-radius: 12px;
-  width: 300px;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease;
-  pointer-events: none;
-}
-
-.event-tooltip .event-description {
-  color: rgba(255, 255, 255, 0.8);
-  line-height: 1.5;
-  font-size: 15px;
-}
-
-.timeline-event:hover .event-tooltip {
-  opacity: 1;
-  visibility: visible;
+.description {
+  font-size: 1rem;
+  margin-bottom: 60px;
 }
 
 @media (max-width: 768px) {
-  .timeline-event {
-    min-width: 200px;
-    margin: 0 50px;
+  .timeline-card {
+    min-width: 250px;
+    margin: 0 30px;
   }
-
-  .event-dot-container {
- 
-  margin-top: 24%;
-}
 }
 </style>

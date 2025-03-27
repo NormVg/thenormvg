@@ -17,7 +17,7 @@ import TimeLine from '@/components/TimeLine.vue';
         <TimeLine/>
    <br><br>
         <hr />
-        <TAO/>
+        <TAO  />
         <br />
         <hr />
         <Studio/>
@@ -25,8 +25,8 @@ import TimeLine from '@/components/TimeLine.vue';
         <hr />
         <Contacts/>
         <br />
-        
-        
+
+
       </div>
     </div>
 </template>
@@ -66,7 +66,7 @@ p{
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-   
+
     h1{
         font-size: 55px;
     }

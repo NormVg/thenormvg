@@ -8,6 +8,14 @@
     />
 
     <ProjectCard
+      title="Cassette"
+      content="Built for true music lovers. Own your collection, stream freely, and embrace decentralization."
+      link="https://cassette.thealphaones.com"
+      :imag="CassetteImg"
+    />
+
+
+    <ProjectCard
       title="AutoCaptionGenAI"
       content="Seamlessly transcribe, translate, and generate subtitles from video files with precision."
       link="https://github.com/NormVg/AutoCaptionGenAI"
@@ -61,6 +69,7 @@ import batman from "@/assets/code_img/batman.gif";
 import eventualy from "@/assets/code_img/eventually.gif";
 import grim from "@/assets/code_img/grim.gif";
 import kraken from "@/assets/code_img/kraken.gif";
+import CassetteImg from "@/assets/code_img/cassette.png"
 </script>
 
 <style scoped>

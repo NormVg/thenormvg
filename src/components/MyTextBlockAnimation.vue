@@ -10,9 +10,9 @@ const prop = defineProps({
 function splitTextAndHTML(input) {
   // Regular expression to match text and HTML tags
   const regex = /(<a[^>]*>[^<]*<\/a>|<br\s*\/?>|<[^>]+>|[^<]+)/g;
-  
+
   const parts = input.match(regex);
-  
+
   // Return an array of objects with type ('text' or 'html') and content
   let result = [];
   let currentContent = ''; // To store the combined text or HTML content
@@ -86,18 +86,24 @@ console.log(splitTextAndHTML(prop.text))
 <style scoped>
 .text-block-animation{
     animation-name: faderOut;
-    
-    
+
+
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
     opacity: 0;
 }
 @keyframes faderOut {
-    from {
+    0% {
         opacity: 0;
+        filter: blur(10px);
     }
-    to{
+    50%{
+      filter: blur(0px);
+    }
+    100%{
         opacity: 1;
+        filter: blur(0px);
+
     }
 }
 

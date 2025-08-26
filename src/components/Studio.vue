@@ -3,7 +3,7 @@
       <h1 >
         <div v-motion-slide-visible-left >Studio</div>
       </h1>
-         <div id="studio-tabs-bar" v-motion-slide-visible-bottom>
+         <div id="studio-tabs-bar" v-motion-slide-visible-once-bottom>
             <div id="tab-code" :style="ActiveStyle[0]" @click="()=>{isActive = 0}">Code</div>•
             <div id="tab-design" :style="ActiveStyle[1]" @click="()=>{isActive = 1}">Design</div>•
             <div id="tab-blog" :style="ActiveStyle[2]" @click="()=>{isActive = 2}">Blogs</div>

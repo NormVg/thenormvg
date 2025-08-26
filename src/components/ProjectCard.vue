@@ -1,5 +1,5 @@
 <template>
-  <div id="prog-card-box" v-motion-slide-visible-bottom @click="openLink">
+  <div id="prog-card-box" v-motion-slide-visible-once-bottom @click="openLink">
     <img :src="progBanner" alt="" />
     <h2>{{ prop.title }}</h2>
     <div>{{ prop.content }}</div>

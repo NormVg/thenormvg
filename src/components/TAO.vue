@@ -1,7 +1,7 @@
 <template>
   <div id="tao-box">
     <h1 >
-      <div v-motion-slide-visible-bottom>
+      <div v-motion-slide-visible-once-bottom>
 
         <a
         href="https://thealphaones.com"
@@ -14,11 +14,11 @@
     </h1>
     <!-- <img src="/img/tao-img.png" alt="thealphaones photo" id="tao-img-0" /> -->
 
-    <div v-motion-slide-visible-bottom>
+    <div v-motion-slide-visible-once-bottom>
       <img src="/img/tao-img.png" alt="thealphaones photo" id="tao-img-0" />
     </div>
     <br /><br /><br />
-    <div v-motion-slide-visible-bottom>
+    <div v-motion-slide-visible-once-bottom>
 
       <p>
         <MyTextBlockAnimation v-if="!isMore" :text="text0" />
@@ -37,7 +37,7 @@
         </p>
 </div>
 
-    <div id="tao-icon" v-motion-slide-visible-bottom>
+    <div id="tao-icon" v-motion-slide-visible-once-bottom>
       <a
         href="https://discord.gg/C3qWK3E5JW"
         target="_blank"

@@ -6,6 +6,7 @@ import CassetteImg from "@/assets/code_img/cassette.png"
 
 export const prog = {
   projects: [
+    // List of project objects, each with title, content, link, and optional image
     {
       title: "Kraken",
       content: "'NEW' code editor, made with new flavour, design pattern and theory",
@@ -17,6 +18,21 @@ export const prog = {
       content:" A everyday CLI tool for you, like a swiss army knife? But for the developers. ",
       link:'https://cook.taohq.org',
       imag:'https://www.taohq.org/_nuxt/cook-thumb.CvHVHAKS.png'
+    },
+    {
+      title:'Cook Commit',
+      content:"A modular CLI tool for AI-powered git commit and PR message generation using Gemini AI.",
+      link:'https://github.com/NormVg/cookcommit'
+    },
+    {
+      title:'PyPrompt',
+      content:"Python CLI toolkit with styled output, prompts, spinners, and progress bars.",
+      link:'https://github.com/NormVg/pyprompt'
+    },
+    {
+      title:'Socket Share',
+      content:"Local Web app for network folder backups with real-time upload and management.",
+      link:'https://github.com/NormVg/socket-share'
     },
     {
       title: "Cassette",

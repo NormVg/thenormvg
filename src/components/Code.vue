@@ -3,13 +3,13 @@
 
 
 
-    <ProjectCard v-for="item in prog.projects" :title="item.title" :content="item.content" :link="item.link" :imag="item?.imag"/>
+    <ProjectCardNew v-for="item in prog.projects" :key="item.title" :title="item.title" :content="item.content" :link="item.link" :imag="item?.imag"/>
 
   </div>
 </template>
 
 <script setup>
-import ProjectCard from "./ProjectCard.vue";
+import ProjectCardNew from "./ProjectCardNew.vue";
 
 
 

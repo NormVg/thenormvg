@@ -1,8 +1,9 @@
 [
     {
       "id": "article-1",
-      "title": "Kraken: A Code Editor with a New Flavor", 
+      "title": "Kraken: A Code Editor with a New Flavor",
       "file": "kraken.md",
+      "content": "Exploring the philosophy and design patterns behind the Kraken code editor.",
       "date":"13/1/25"
     }
   ]

@@ -1,8 +1,8 @@
 <template>
   <div id="blog-box">
     <!-- BLOGS COMMMING SOON......... -->
-  <BlogCard v-for="item in BlogsListJson" :key="item" :title="item.title" :link="`/article/${item.id}`"  />     
-  <!-- <BlogCard/>     
+  <BlogCard v-for="item in BlogsListJson" :key="item" :title="item.title" :content="item.content" :link="`/article/${item.id}`"  />
+  <!-- <BlogCard/>
 
   <BlogCard/>      -->
 

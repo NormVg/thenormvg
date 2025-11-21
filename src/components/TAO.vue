@@ -73,19 +73,13 @@ import MyTextBlockAnimation from "./MyTextBlockAnimation.vue";
 import { ref } from "vue";
 const isMore = ref(false);
 
-const text0 = `<a href="https://thealphaones.com" target="_blank" rel="noopener noreferrer">TheAlphaOnes</a> is a group of passionate developers fueled by a love for technology and innovation. We focus on building creative, user-friendly solutions that shape the future. With our vision of seamless and minimalist design, we’re creating an ecosystem we call <br /> "AURA Lifestyle"—a space for real-world functionality and collaboration. Together, we aim to learn, build, and inspire as we pave the way for a brighter tomorrow.`
+const text0 = `We are <a href="https://thealphaones.com" target="_blank" rel="noopener noreferrer">TheAlphaOnes</a>, building with passion and purpose. Our focus is on meaningful experiences that spark curiosity and inspire creativity. Join us as we blend technology and human connection to shape a better digital future.`
 
-const text2 = `We at <a href="https://thealphaones.com" target="_blank" rel="noopener noreferrer">TheAlphaOnes</a> are more than simply a development team—we are a living example of creativity and enthusiasm driven by a deep love of technology. With a focus on hardware and software solutions, we are leading the way in creating the future.`;
+const text1 = `We are <a href="https://thealphaones.com" target="_blank" rel="noopener noreferrer">TheAlphaOnes</a>, a young, passionate group of builders who love creating real things that people actually use. From dev tools to AI projects and futuristic experiments, we’re here to craft ideas that blend tech with everyday life.<br /><br />
 
-const text1 = `At <a href="https://thealphaones.com" target="_blank" rel="noopener noreferrer">TheAlphaOnes</a>, we’re driven by a deep love for technology and the endless possibilities it holds. As a team of passionate developers, we focus on creating innovative solutions that blend functionality with creativity. Our mission is simple: to build tools and experiences that stand out and make life more intuitive and enriching.<br /><br />
+Beyond just a startup-in-the-making, we’re a public community, a place for anyone to connect, collaborate, and help shape the future of software, together. Whether you’re a builder, thinker, or just curious, you’re welcome here.<br /><br />
 
-We believe that technology should naturally fit into everyday life, empowering meaningful connections and simplifying complex processes. That’s why we’re dedicated to crafting exceptional user interfaces and experiences (UI/UX) with a focus on minimalism and functionality. These principles come together in our vision of the "AURA Lifestyle," a unique ecosystem designed to enable both creators and users to thrive.<br /><br />
-
-We are isn’t just about what we build—it’s about who we build for. We’re excited to collaborate with like-minded developers, dreamers, and innovators who share our passion for pushing boundaries and redefining what’s possible.<br /><br />
-
-Stay tuned as we continue to introduce ground-breaking ideas that challenge conventions and expand horizons. The future isn’t just something we imagine; it’s something we’re actively building—one step, one idea, and one project at a time.<br /><br />
-
-Join us as we learn, create, and inspire, paving the way for a brighter and more innovative tomorrow.`;
+We aim to create something more than just products or services – we strive to shape a way of living, the Aura lifestyle. A lifestyle that blends technology, creativity, and human connection to redefine how we interact with the world around us.`;
 </script>
 
 <style scoped>

@@ -20,15 +20,14 @@ FROM node:20-alpine AS production
 
 WORKDIR /app
 
-# Copy built assets and package files from build stage
-COPY --from=build /app/dist ./dist
-COPY --from=build /app/package*.json ./
+# Install serve globally to serve static files
+RUN npm install -g serve
 
-# Install only production dependencies for preview server
-RUN npm install --omit=dev
+# Copy built assets from build stage
+COPY --from=build /app/dist ./dist
 
 # Expose port 3000
 EXPOSE 3000
 
-# Start Vite preview server
-CMD ["npm", "run", "preview"]
+# Start serve
+CMD ["serve", "-s", "dist", "-l", "3000"]

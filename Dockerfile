@@ -1,26 +1,17 @@
-# Build stage
-FROM node:20-alpine AS builder
-
-WORKDIR /app
-
-COPY package.json package-lock.json ./
-RUN npm install
-
-COPY . .
-RUN npm run build
-
-# Production stage - serve with Node
+# Dockerfile for thenormvg Vue 3 + Vite app
 FROM node:20-alpine
 
 WORKDIR /app
 
-COPY package.json package-lock.json ./
-RUN npm install --production
+COPY package.json  ./
+RUN npm install
 
-COPY --from=builder /app/dist /app/dist
+COPY . .
+
+RUN npm run build
 
 EXPOSE 3000
 
-CMD ["npm", "run", "preview", "--", "--host", "--port", "3000"]
+CMD ["npm", "run", "preview"]
 
 

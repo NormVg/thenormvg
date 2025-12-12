@@ -1,0 +1,11 @@
+[build]
+dependsOn = ["setup"]
+cmds = ["npm run build"]
+
+[setup]
+dependsOn = []
+cmds = ["npm install"]
+
+[start]
+cmd = "npm run preview --host --port 3000"
+

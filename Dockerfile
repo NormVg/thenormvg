@@ -1,17 +1,28 @@
-# Dockerfile for thenormvg Vue 3 + Vite app
-FROM node:20-alpine
+# Build stage
+FROM node:20-alpine AS builder
 
 WORKDIR /app
 
 COPY package.json pnpm-lock.yaml ./
-RUN npm install -g pnpm && pnpm install
+RUN npm install -g pnpm && pnpm install --frozen-lockfile
 
 COPY . .
-
 RUN pnpm run build
 
-EXPOSE 5173
+# Production stage - serve with Node
+FROM node:20-alpine
 
-CMD ["pnpm", "run", "preview", "--host"]
+WORKDIR /app
+
+RUN npm install -g pnpm
+
+COPY package.json pnpm-lock.yaml ./
+RUN pnpm install --frozen-lockfile --prod
+
+COPY --from=builder /app/dist /app/dist
+
+EXPOSE 3000
+
+CMD ["pnpm", "run", "preview", "--host", "--port", "3000"]
 
 

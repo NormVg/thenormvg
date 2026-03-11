@@ -105,8 +105,19 @@ const education = [
   font-size: 13px;
   color: var(--color-text-dim);
   line-height: 1.7;
-  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
   padding-top: 12px;
   margin-top: 4px;
+}
+
+@media only screen and (max-width: 600px) {
+  .edu-header {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .edu-body {
+    padding: 20px 22px;
+  }
 }
 </style>

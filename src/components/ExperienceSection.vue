@@ -144,4 +144,21 @@ const experiences = [
   border: 1px solid rgba(255, 255, 255, 0.18);
   letter-spacing: 0.5px;
 }
+
+@media only screen and (max-width: 600px) {
+  .exp-card {
+    gap: 16px;
+    padding: 24px 0;
+  }
+
+  .exp-header {
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 12px;
+  }
+
+  .exp-tags {
+    gap: 6px;
+  }
+}
 </style>

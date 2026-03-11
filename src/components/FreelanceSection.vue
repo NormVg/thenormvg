@@ -169,5 +169,23 @@ const offerings = [
     border-left: none;
     border-top: 1px solid rgba(255, 255, 255, 0.06);
   }
+
+  .cta-strip {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 24px;
+  }
+
+  .cta-text {
+    line-height: 1.5;
+    flex: none;
+    width: 100%;
+  }
+
+  .cta-btn {
+    width: 100%;
+    justify-content: center;
+  }
 }
 </style>

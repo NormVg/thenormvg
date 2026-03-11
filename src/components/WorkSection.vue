@@ -162,7 +162,11 @@ const projects = [
 /* ── Mobile ─────────────────────────────────────────────────── */
 @media only screen and (max-width: 768px) {
   .project-card {
-    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+
+  .project-content {
+    padding: 22px;
   }
 
   .project-img-wrapper {

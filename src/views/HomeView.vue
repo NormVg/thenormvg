@@ -108,17 +108,27 @@ section[data-animate].visible {
 
 @media only screen and (max-width: 768px) {
   #home {
-    padding: 0 24px;
+    padding: 0 16px;
   }
 
   .section-inner {
-    padding: 50px 0;
+    padding: 40px 0;
   }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   #home {
     max-width: 700px;
+  }
+
+  .section-inner {
+    padding: 0 5%;
+  }
+
+  .section-heading {
+    margin-bottom: 30px;
+    font-size: 11px;
+    letter-spacing: 5px;
   }
 }
 </style>

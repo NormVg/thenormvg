@@ -21,9 +21,16 @@ defineProps({ isVisible: Object });
   width: 100%;
   opacity: 0.9;
   transition: opacity var(--transition-base);
+  margin-top: 20px;
 }
 
 .spotify-wrapper:hover {
   opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .spotify-wrapper {
+    margin-top: 10px;
+  }
 }
 </style>

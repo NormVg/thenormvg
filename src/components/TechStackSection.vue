@@ -99,7 +99,21 @@ const stack = [
 @media only screen and (max-width: 768px) {
   .stack-grid {
     grid-template-columns: 1fr;
-    gap: 28px;
+    gap: 24px;
+    margin-top: 5px;
+  }
+
+  .tech-list {
+    gap: 6px;
+  }
+
+  .tech-item {
+    font-size: 11px;
+    padding: 3px 10px;
+  }
+
+  .stack-category {
+    gap: 12px;
   }
 }
 </style>

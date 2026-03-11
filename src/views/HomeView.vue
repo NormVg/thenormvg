@@ -5,9 +5,11 @@ import AboutSection from "@/components/AboutSection.vue";
 import SpotifySection from "@/components/SpotifySection.vue";
 import WorkSection from "@/components/WorkSection.vue";
 import GithubSection from "@/components/GithubSection.vue";
+import BlogSection from "@/components/BlogSection.vue";
 import TechStackSection from "@/components/TechStackSection.vue";
 import ExperienceSection from "@/components/ExperienceSection.vue";
 import EducationSection from "@/components/EducationSection.vue";
+import TimelineSection from "@/components/TimelineSection.vue";
 import FreelanceSection from "@/components/FreelanceSection.vue";
 import ContactSection from "@/components/ContactSection.vue";
 
@@ -26,12 +28,16 @@ const { isVisible } = useScrollReveal();
     <WorkSection :isVisible="isVisible" />
     <!-- GitHub -->
     <GithubSection :isVisible="isVisible" />
+    <!-- Writing -->
+    <BlogSection :isVisible="isVisible" />
     <!-- Tech Stack -->
     <TechStackSection :isVisible="isVisible" />
     <!-- Experience -->
     <ExperienceSection :isVisible="isVisible" />
     <!-- Education -->
     <EducationSection :isVisible="isVisible" />
+    <!-- Journey -->
+    <TimelineSection :isVisible="isVisible" />
     <!-- Available -->
     <FreelanceSection :isVisible="isVisible" />
     <!-- Links / Contact -->

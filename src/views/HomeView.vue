@@ -1,91 +1,124 @@
 <script setup>
-import Intro from '@/components/Intro.vue';
-import TAO from '@/components/TAO.vue';
-import Studio from '@/components/Studio.vue';
-import Contacts from '@/components/Contacts.vue';
-import TimeLine from '@/components/TimeLine.vue';
+import { useScrollReveal } from "@/composables/useScrollReveal";
+import HeroSection from "@/components/HeroSection.vue";
+import AboutSection from "@/components/AboutSection.vue";
+import TechStackSection from "@/components/TechStackSection.vue";
+import WorkSection from "@/components/WorkSection.vue";
+import GithubSection from "@/components/GithubSection.vue";
+import TimelineSection from "@/components/TimelineSection.vue";
+import EducationSection from "@/components/EducationSection.vue";
+import ExperienceSection from "@/components/ExperienceSection.vue";
+import BlogSection from "@/components/BlogSection.vue";
+import FreelanceSection from "@/components/FreelanceSection.vue";
+import SpotifySection from "@/components/SpotifySection.vue";
+import ContactSection from "@/components/ContactSection.vue";
 
-
+const { isVisible } = useScrollReveal();
 </script>
 
 <template>
-      <div id='home-box'>
-      <div id='home-box-child'>
-        <Intro/>
-        <br />
-        <br />
-        <TimeLine/>
-   <br><br>
-        <hr />
-        <TAO  />
-        <br />
-        <hr />
-        <Studio/>
-        <br />
-        <hr />
-        <Contacts/>
-        <br />
-
-
-      </div>
-    </div>
+  <div id="home">
+    <HeroSection />
+    <AboutSection :isVisible="isVisible" />
+    <TechStackSection :isVisible="isVisible" />
+    <EducationSection :isVisible="isVisible" />
+    <ExperienceSection :isVisible="isVisible" />
+    <WorkSection :isVisible="isVisible" />
+    <BlogSection :isVisible="isVisible" />
+    <GithubSection :isVisible="isVisible" />
+    <TimelineSection :isVisible="isVisible" />
+    <FreelanceSection :isVisible="isVisible" />
+    <SpotifySection :isVisible="isVisible" />
+    <ContactSection :isVisible="isVisible" />
+    <div style="height: 120px"></div>
+  </div>
 </template>
 
+<style>
+/* ═══════════════════════════════════════════════════════════
+   HOME LAYOUT
+   ═══════════════════════════════════════════════════════════ */
 
-<style >
-h1{
-    color: whitesmoke;
-    font-size: 60px;
-    font-family: 'Italianno', cursive;
-    font-weight: 100;
-    animation: slideInFromLeft 850ms forwards;
-}
-p{
-    color: #919191;
-    font-size: 20px;
-    text-align: left;
-    line-height: 28px;
-    font-family: 'K2D', sans-serif;
-    font-weight: 100;
-    animation: slideInFromLeft 950ms forwards;
+#home {
+  padding: 0 40px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-#home-box{
-    margin-top: 20px;
-    margin-bottom: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* ═══════════════════════════════════════════════════════════
+   SHARED SECTION STYLES
+   ═══════════════════════════════════════════════════════════ */
 
-
+section[data-animate] {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 800ms var(--ease-out-expo),
+    transform 800ms var(--ease-out-expo);
 }
 
-#home-box-child{
-    width: 40vw;
+section[data-animate].visible {
+  opacity: 1;
+  transform: translateY(0);
 }
+
+.section-inner {
+  padding: 80px 0;
+}
+
+.section-heading {
+  font-family: var(--font-heading);
+  font-size: 13px;
+  letter-spacing: 5px;
+  color: var(--color-text-muted);
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 24px;
+  height: 1px;
+  background: rgba(145, 145, 145, 0.4);
+}
+
+/* Glassmorphism (shared by WorkSection cards) */
+.glass-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: all var(--transition-base);
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.12);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+/* ═══════════════════════════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════════════════════════ */
 
 @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-
-    h1{
-        font-size: 55px;
-    }
-    p{
-        font-size: 15px;
-        line-height: 20px;
-    }
-    #home-box-child{
-        width: 90vw;
-    }
-    #home-box{
-        margin-top: 30px;
-    }
+  #home {
+    padding: 0 24px;
   }
 
-  @media only screen and (min-width: 600px) {
-    /* For tablets: */
-    #home-box-child{
-        width: 63vw;
-    }
+  .section-inner {
+    padding: 50px 0;
   }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  #home {
+    max-width: 700px;
+  }
+}
 </style>

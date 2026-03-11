@@ -1,3 +1,37 @@
+/* ═══════════════════════════════════════════════════════════
+   DESIGN TOKENS
+   ═══════════════════════════════════════════════════════════ */
+
+:root {
+  --color-bg: #000000;
+  --color-text: #ffffff;
+  --color-text-muted: #b0b0b0;
+  --color-text-dim: rgba(210, 210, 210, 0.75);
+  --color-accent: rgba(255, 255, 255, 0.15);
+  --color-border: rgba(255, 255, 255, 0.12);
+  --color-glow: rgba(255, 255, 255, 0.08);
+
+  --font-display: 'Italianno', cursive;
+  --font-heading: 'Julius Sans One', sans-serif;
+  --font-body: 'K2D', sans-serif;
+  --font-mono: 'VT323', monospace;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --transition-base: 350ms var(--ease-out-expo);
+}
+
+/* ═══════════════════════════════════════════════════════════
+   GLOBAL RESET & BASE
+   ═══════════════════════════════════════════════════════════ */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   background-image: url("../assets/bg.jpg");
@@ -5,92 +39,151 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: bottom;
-  background-color: black;
-  color: #91919171;
-  /* height: calc(100vh - 2px); */
-  /* mask-image: linear-gradient(rgba(0, 0, 0, 1) 98%, transparent); */
-  /* mask-position: bottom; */
-  /* padding-bottom: 400px ; */
+  background-color: var(--color-bg);
+  color: var(--color-text-muted);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
-  text-decoration: underline #91919171 1px;
-  color: whitesmoke;
-  margin-left: 1px;
-  transition: all ease-in-out 300ms;
+  text-decoration: none;
+  color: var(--color-text);
+  transition: all var(--transition-base);
 }
-a:hover {
-  text-decoration: underline whitesmoke 1px;
-}
+
 #app {
-  
   height: 89vh;
   overflow-y: scroll;
   mask-image: linear-gradient(rgba(0, 0, 0, 1) 80%, transparent);
 }
 
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  /* .App {
-    height: 82vh;
-    mask-image: linear-gradient(rgba(0, 0, 0, 1) 80%, transparent);
-  } */
+/* ═══════════════════════════════════════════════════════════
+   SCROLLBAR
+   ═══════════════════════════════════════════════════════════ */
 
-  /* #prog-heading {
-    top: 75px !important;
-  }
-
-  #prog-con {
-
-    top: 115px !important;
-  } */
-}
-
-/*  THIS THE SCROLL-BARR */
-/* width */
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 5px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
-  border-radius: 15px;
+  background: transparent;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #919191;
+  background: rgba(145, 145, 145, 0.3);
   border-radius: 10px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: whitesmoke;
+  background: var(--color-text-muted);
 }
 
-/* END OF SCHROLL BAR */
+/* ═══════════════════════════════════════════════════════════
+   KEYFRAME ANIMATIONS
+   ═══════════════════════════════════════════════════════════ */
 
-/* font-family: 'Italianno', cursive;
-font-family: 'K2D', sans-serif;
-font-family: 'VT323', monospace; */
-
-
-.from-left {
-
-  animation: slideInFromLeft 850ms forwards;
-}
 @keyframes slideInFromLeft {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-40px);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
   }
 }
 
+@keyframes fadeUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
 
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scrollBounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+@keyframes lineGrow {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 50px;
+  }
+}
+
+@keyframes subtlePulse {
+
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes drawLine {
+  0% {
+    height: 0;
+  }
+
+  100% {
+    height: 100%;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   GLASSMORPHISM UTILITIES
+   ═══════════════════════════════════════════════════════════ */
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: all var(--transition-base);
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+/* ═══════════════════════════════════════════════════════════
+   TRANSITIONS
+   ═══════════════════════════════════════════════════════════ */
 
 .slide-fade-enter-active {
   transition: all 0.8s ease-out;
@@ -114,4 +207,14 @@ font-family: 'VT323', monospace; */
 .v-enter-from,
 .v-leave-to {
   opacity: 0;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════════════════════════ */
+
+@media only screen and (max-width: 768px) {
+  #app {
+    height: 85vh;
+  }
 }

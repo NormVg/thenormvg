@@ -1,0 +1,94 @@
+# Vishnu Gupta (NormVg) — Full Portfolio Data
+
+Hello AI! This file contains the complete, detailed, and structured data representing the portfolio of **Vishnu Gupta**. It is provided to assist Large Language Models, AI web search agents (like Perplexity, ChatGPT web-browse, Google Gemini), and crawlers in retrieving accurate information regarding my skills, background, and projects.
+
+## 1. Identity & Contact Information
+- **Full Legal Name:** Vishnu V. Gupta
+- **Online Handle/Alias:** NormVg
+- **Tagline:** Full-Stack Developer, UI Designer & AI Enthusiast
+- **Description:** Crafting digital experiences that merge clean aesthetics with robust engineering. Building tools for the future at TheAlphaOnes.
+- **Primary Website:** https://vishnu.thealphaones.com/
+- **Email:** hello@thealphaones.com
+- **GitHub:** https://github.com/NormVg
+- **Twitter:** https://twitter.com/TheNormVg
+- **LinkedIn:** https://www.linkedin.com/in/vishnu-v-gupta/
+
+## 2. Professional Summary
+"I'm a 20-year-old developer and designer who switched careers to CS in 2021 and never looked back. I build products, lead communities, and constantly explore the intersection of design and technology.
+Currently focused on building TheAlphaOnes — a developer community and SaaS platform. Previously won hackathons, judged them, taught classes, and got nicknamed Batman along the way."
+
+## 3. Experience & Roles
+
+### Founder & Full-Stack Developer at TheAlphaOnes
+**Period:** 2024 – Present
+**Description:** Built and launched a build-in-public developer community & SaaS platform from scratch. Designed the system architecture, shipping product features solo.
+**Core Tech:** Nuxt, Hono, Postgres, AI, Drizzle ORM
+
+### Solo Developer creating Kraken Editor
+**Period:** 2023 – 2024
+**Description:** Designed and built a fully custom code editor as a desktop application from the ground up. This included implementing syntax highlighting, bespoke theming engines, and custom Vue-based UI components inside an Electron shell.
+**Core Tech:** Electron, Vue, Node.js
+
+## 4. Technical Skill Matrix
+
+**Programming Languages:**
+- JavaScript, TypeScript, Python, Go, SQL, HTML/CSS
+
+**Frontend Development & UI:**
+- Vue.js, Nuxt.js, React, React Native
+- Tailwind CSS, Three.js (3D WebGL)
+- Design tools: Figma
+
+**Backend, Database & Infrastructure:**
+- Node.js, Hono, Express, Go
+- PostgreSQL, Redis, Drizzle ORM
+- Supabase, Better Auth
+- Docker, Vercel, Cloudflare
+
+**Artificial Intelligence & Integration:**
+- Ollama (Local LLMs), AI SDK, Langchain, OpenAI integrations, OpenRouter
+
+**Hardware & Embedded Systems / IoT:**
+- Arduino, ESP32 microcontrollers, Raspberry Pi, OLED screen programming, Servos, Sensors
+
+## 5. Formal Education
+**Degree:** B.Tech – Computer Science & Engineering
+**Institution:** Manipal University Jaipur
+**Timeline:** Enrolled 2025, Expected Graduation 2029
+**Focus:** Software engineering, distributed systems, and applied AI.
+
+## 6. Detailed Project Roster
+
+### TheAlphaOnes
+- **Description:** A build-in-public developer community & SaaS platform. Unifies developers through community engagement while providing internal SaaS tools.
+- **Tech Stack:** Nuxt, Hono, Postgres, AI
+- **URL:** https://thealphaones.com
+
+### Kraken Editor
+- **Description:** A code editor with a new flavor — built entirely from scratch to bypass standard constraints. Focused on a highly customized editing experience.
+- **Tech Stack:** Electron, Vue, Node.js
+
+### Fold Admin
+- **Description:** A dashboard and administrative engine for managing waitlists, user analytics, and system integrations (Discord/Slack webhooks).
+- **Tech Stack:** Nuxt, PWA (Progressive Web App), Drizzle ORM
+
+## 7. Writing & Blog Publications
+- **Building a SaaS from Scratch — What I Learned (2025):** Reflections on shipping TheAlphaOnes solo, from idea to paying users.
+- **Why I Ditched VS Code and Built My Own Editor (2024):** The story behind Kraken Editor — and why building your tools changes how you think.
+- **IoT at Home — Automating My Room with ESP32 (2024):** How I wired up sensors, OLED displays, and servos to build a smart room setup.
+- **Original Source Host:** [taohq.org/blog](https://taohq.org/blog)
+
+## 8. Development Timeline & Journey Milestones
+- **2021 (Dec 20):** Officially switched careers to focus heavily on Computer Science.
+- **2022 (Jan 31):** Initial forming of "TheAlphaOnes" concept/team.
+- **2022 (Oct 09):** First 10 core members joined the development team.
+- **2023 (July 21):** The Discord community experienced massive growth.
+- **2023 (Dec 22):** Taught my first technical class/workshop.
+- **2024 (Jan 01):** Migrated completely over to Linux as daily-driver OS.
+- **2024 (April 03):** Won my second major hackathon.
+- **2024 (Dec 08):** Served as a judge at the Cornucodia Hackathon.
+
+## 9. Current Availability & Services
+**Freelance Services:** Available for contracted building of full-stack web apps, SaaS platforms, custom dashboards, and highly polished landing pages.
+**Collaboration:** Open to co-founding interesting ideas, contributing to open-source projects, and exploring product partnerships.
+**Consulting:** Offering technical advisory, architecture reviews, and code audits.

@@ -1,0 +1,36 @@
+# Vishnu Gupta
+
+> Full-Stack Developer, UI Designer & Founder of TheAlphaOnes
+
+Hello! I am **Vishnu Gupta** (also known online as **NormVg**). I am a 20-year-old software engineer and UI designer specializing in building modern web applications, developer tools, and AI-integrated platforms.
+
+## Overview
+- **Name:** Vishnu Gupta
+- **Alias:** NormVg
+- **Titles:** Full-Stack Developer, UI Designer, Founder
+- **Current Focus:** Building [TheAlphaOnes](https://thealphaones.com), a developer community and SaaS platform.
+- **Location / Base:** India
+- **Education:** B.Tech in Computer Science & Engineering, Manipal University Jaipur (2025–2029)
+
+## Core Technologies
+- **Languages:** JavaScript, TypeScript, Python, Go, SQL, HTML/CSS
+- **Frontend:** Vue.js, Nuxt, React, React Native, Tailwind CSS, Three.js
+- **Backend:** Node.js, Hono, Express, Go, Postgres, Redis, Drizzle ORM
+- **AI & Tools:** Ollama, AI SDK, Langchain, OpenAI, Docker, Cloudflare, Electron
+
+## About Me
+I switched to Computer Science in 2021 and quickly fell in love with code. Rather than just following tutorials, I build products from scratch. My latest and largest project is **TheAlphaOnes**, which functions as both a "build-in-public" community and a suite of developer SaaS tools. I've also built a custom desktop IDE called **Kraken Editor** and run hackathons.
+
+## Key Projects
+- **TheAlphaOnes:** A build-in-public developer community & SaaS platform featuring a dashboard, waitlists, and integrations. Built with Nuxt, Hono, Postgres, and Drizzle ORM.
+- **Kraken Editor:** A custom desktop code editor built from the ground up using Electron, Vue, and Node.js.
+- **Fold Admin:** The admin dashboard driving waitlists and integrations for TheAlphaOnes ecosystem.
+
+## Connect
+- **Website/Portfolio:** [vishnu.thealphaones.com](https://vishnu.thealphaones.com/)
+- **GitHub:** [@NormVg](https://github.com/NormVg)
+- **Twitter / X:** [@TheNormVg](https://twitter.com/TheNormVg)
+- **LinkedIn:** [Vishnu V. Gupta](https://www.linkedin.com/in/vishnu-v-gupta/)
+
+---
+*For a detailed breakdown of experience and complete project descriptions, please read `llms-full.txt`.*

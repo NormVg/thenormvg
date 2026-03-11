@@ -2,15 +2,13 @@
 import { useScrollReveal } from "@/composables/useScrollReveal";
 import HeroSection from "@/components/HeroSection.vue";
 import AboutSection from "@/components/AboutSection.vue";
-import TechStackSection from "@/components/TechStackSection.vue";
+import SpotifySection from "@/components/SpotifySection.vue";
 import WorkSection from "@/components/WorkSection.vue";
 import GithubSection from "@/components/GithubSection.vue";
-import TimelineSection from "@/components/TimelineSection.vue";
-import EducationSection from "@/components/EducationSection.vue";
+import TechStackSection from "@/components/TechStackSection.vue";
 import ExperienceSection from "@/components/ExperienceSection.vue";
-import BlogSection from "@/components/BlogSection.vue";
+import EducationSection from "@/components/EducationSection.vue";
 import FreelanceSection from "@/components/FreelanceSection.vue";
-import SpotifySection from "@/components/SpotifySection.vue";
 import ContactSection from "@/components/ContactSection.vue";
 
 const { isVisible } = useScrollReveal();
@@ -18,17 +16,25 @@ const { isVisible } = useScrollReveal();
 
 <template>
   <div id="home">
+    <!-- Hero -->
     <HeroSection />
+    <!-- Into / About -->
     <AboutSection :isVisible="isVisible" />
-    <TechStackSection :isVisible="isVisible" />
-    <EducationSection :isVisible="isVisible" />
-    <ExperienceSection :isVisible="isVisible" />
-    <WorkSection :isVisible="isVisible" />
-    <BlogSection :isVisible="isVisible" />
-    <GithubSection :isVisible="isVisible" />
-    <TimelineSection :isVisible="isVisible" />
-    <FreelanceSection :isVisible="isVisible" />
+    <!-- Music -->
     <SpotifySection :isVisible="isVisible" />
+    <!-- Work -->
+    <WorkSection :isVisible="isVisible" />
+    <!-- GitHub -->
+    <GithubSection :isVisible="isVisible" />
+    <!-- Tech Stack -->
+    <TechStackSection :isVisible="isVisible" />
+    <!-- Experience -->
+    <ExperienceSection :isVisible="isVisible" />
+    <!-- Education -->
+    <EducationSection :isVisible="isVisible" />
+    <!-- Available -->
+    <FreelanceSection :isVisible="isVisible" />
+    <!-- Links / Contact -->
     <ContactSection :isVisible="isVisible" />
     <div style="height: 120px"></div>
   </div>

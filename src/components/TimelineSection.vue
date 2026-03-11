@@ -28,13 +28,13 @@
 <script setup>
 import { ref, computed } from "vue";
 import { ChevronDown } from "lucide-vue-next";
-import timelineData from "@/assets/data/Timeline.json";
+import { journey } from "../../portfolio.config.js";
 
 defineProps({ isVisible: Object });
 
 const PREVIEW_COUNT = 5;
 const expanded = ref(false);
-const timeline = [...timelineData];
+const timeline = journey;
 const visibleTimeline = computed(() =>
   expanded.value ? timeline : timeline.slice(0, PREVIEW_COUNT)
 );

@@ -19,7 +19,7 @@
           </div>
         </a>
       </div>
-      <a href="https://taohq.org/blog" target="_blank" class="view-all">
+      <a :href="blogViewAllLink" target="_blank" class="view-all">
         All writing
         <ArrowUpRight :size="13" />
       </a>
@@ -29,32 +29,8 @@
 
 <script setup>
 import { ArrowUpRight } from "lucide-vue-next";
-
+import { blogPosts as posts, blogViewAllLink } from "../../portfolio.config.js";
 defineProps({ isVisible: Object });
-
-const posts = [
-  {
-    title: "Building a SaaS from Scratch — What I Learned",
-    desc: "Reflections on shipping TheAlphaOnes solo, from idea to paying users.",
-    tag: "Engineering",
-    date: "2025",
-    link: "https://taohq.org/blog",
-  },
-  {
-    title: "Why I Ditched VS Code and Built My Own Editor",
-    desc: "The story behind Kraken Editor — and why building your tools changes how you think.",
-    tag: "Dev",
-    date: "2024",
-    link: "https://taohq.org/blog",
-  },
-  {
-    title: "IoT at Home — Automating My Room with ESP32",
-    desc: "How I wired up sensors, OLED displays, and servos to build a smart room setup.",
-    tag: "IoT",
-    date: "2024",
-    link: "https://taohq.org/blog",
-  },
-];
 </script>
 
 <style scoped>

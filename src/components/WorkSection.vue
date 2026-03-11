@@ -28,6 +28,7 @@
 
 <script setup>
 import { ArrowUpRight } from "lucide-vue-next";
+import { projects as projectConfig } from "../../portfolio.config.js";
 
 import imgAlpha from "@/assets/code_img/def1.gif";
 import imgKraken from "@/assets/code_img/kraken.gif";
@@ -35,30 +36,18 @@ import imgFold from "@/assets/code_img/def.gif";
 
 defineProps({ isVisible: Object });
 
-const projects = [
-  {
-    title: "TheAlphaOnes",
-    description: "A build-in-public developer community & SaaS platform.",
-    tags: ["Nuxt", "Hono", "Postgres", "AI"],
-    link: "https://thealphaones.com",
-    image: imgAlpha,
-  },
-  {
-    title: "Kraken Editor",
-    description: "A code editor with a new flavor — built from scratch.",
-    tags: ["Electron", "Vue", "Node.js"],
-    link: "#",
-    image: imgKraken,
-  },
-  {
-    title: "Fold Admin",
-    description:
-      "Dashboard for managing waitlists, analytics, and integrations.",
-    tags: ["Nuxt", "PWA", "Drizzle ORM"],
-    link: "#",
-    image: imgFold,
-  },
-];
+// Map imageKey strings from config to the actual imported assets
+const imageMap = {
+  alpha: imgAlpha,
+  kraken: imgKraken,
+  fold: imgFold,
+};
+
+// Resolve images onto each project object
+const projects = projectConfig.map((p) => ({
+  ...p,
+  image: imageMap[p.imageKey],
+}));
 </script>
 
 <style scoped>

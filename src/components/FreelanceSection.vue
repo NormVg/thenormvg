@@ -13,9 +13,9 @@
         </div>
         <div class="cta-strip">
           <div class="cta-blink"></div>
-          <p class="cta-text">Open to work — let's build something great together.</p>
-          <a href="#contact" class="cta-btn">
-            <span>Get in touch</span>
+          <p class="cta-text">{{ freelanceCTA.text }}</p>
+          <a :href="freelanceCTA.buttonHref" class="cta-btn">
+            <span>{{ freelanceCTA.buttonLabel }}</span>
             <ArrowUpRight :size="14" />
           </a>
         </div>
@@ -26,26 +26,8 @@
 
 <script setup>
 import { ArrowUpRight } from "lucide-vue-next";
-
+import { freelanceOfferings as offerings, freelanceCTA } from "../../portfolio.config.js";
 defineProps({ isVisible: Object });
-
-const offerings = [
-  {
-    title: "Freelance",
-    description: "Full-stack web apps, SaaS platforms, dashboards, and landing pages.",
-    color: "rgba(180, 220, 255, 0.7)",
-  },
-  {
-    title: "Collaboration",
-    description: "Open to co-founding, open-source projects, and product partnerships.",
-    color: "rgba(200, 180, 255, 0.7)",
-  },
-  {
-    title: "Consulting",
-    description: "Technical advisory, architecture reviews, and code audits.",
-    color: "rgba(180, 255, 210, 0.7)",
-  },
-];
 </script>
 
 <style scoped>

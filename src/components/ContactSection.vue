@@ -1,8 +1,8 @@
 <template>
   <section id="contact" data-animate :class="{ visible: isVisible['contact'] }">
     <div class="section-inner contact-inner">
-      <h2 class="contact-heading">Let's build something.</h2>
-      <p class="contact-sub">Got an idea or just want to say hey? Reach out.</p>
+      <h2 class="contact-heading">{{ contact.heading }}</h2>
+      <p class="contact-sub">{{ contact.subtext }}</p>
       <div class="socials">
         <a v-for="social in socials" :key="social.label" :href="social.href" target="_blank" class="social-link">
           <component :is="social.icon" :size="15" />
@@ -15,15 +15,16 @@
 
 <script setup>
 import { Twitter, Github, Youtube, Mail, Linkedin } from "lucide-vue-next";
+import { contact, identity } from "../../portfolio.config.js";
 
 defineProps({ isVisible: Object });
 
 const socials = [
-  { label: "Twitter", href: "https://twitter.com/TheNormVg", icon: Twitter },
-  { label: "GitHub", href: "https://github.com/NormVg", icon: Github },
-  { label: "LinkedIn", href: "https://www.linkedin.com/in/vishnu-v-gupta/", icon: Linkedin },
-  { label: "YouTube", href: "#", icon: Youtube },
-  { label: "Email", href: "mailto:hello@thealphaones.com", icon: Mail },
+  { label: "Twitter", href: identity.twitter, icon: Twitter },
+  { label: "GitHub", href: identity.github, icon: Github },
+  { label: "LinkedIn", href: identity.linkedin, icon: Linkedin },
+  { label: "YouTube", href: identity.youtube, icon: Youtube },
+  { label: "Email", href: identity.email, icon: Mail },
 ];
 </script>
 

@@ -23,16 +23,8 @@
 </template>
 
 <script setup>
+import { education } from "../../portfolio.config.js";
 defineProps({ isVisible: Object });
-
-const education = [
-  {
-    degree: "B.Tech – Computer Science & Engineering",
-    institution: "Manipal University Jaipur",
-    period: "2025 – 2029",
-    note: "Focused on software engineering, systems, and applied AI.",
-  },
-];
 </script>
 
 <style scoped>

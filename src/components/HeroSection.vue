@@ -2,17 +2,16 @@
   <section id="hero">
     <div class="hero-content">
       <h1 class="hero-name" :class="{ 'animate-in': ready }">
-        Vishnu Gupta
+        {{ identity.name }}
       </h1>
 
       <p class="hero-subtitle" :class="{ 'animate-in': ready }" style="animation-delay: 200ms">
-        FULL-STACK DEVELOPER, UI DESIGNER & AI ENTHUSIAST
+        {{ identity.subtitle }}
       </p>
 
       <p class="hero-desc" :class="{ 'animate-in': ready }" style="animation-delay: 450ms">
-        Crafting digital experiences that merge clean aesthetics with robust
-        engineering. Building tools for the future at
-        <a href="https://thealphaones.com" target="_blank">TheAlphaOnes</a>.
+        {{ identity.description }}
+        <a :href="identity.descriptionLinkHref" target="_blank">{{ identity.descriptionLinkText }}</a>.
       </p>
     </div>
 
@@ -25,6 +24,7 @@
 
 <script setup>
 import { ref, onMounted } from "vue";
+import { identity } from "../../portfolio.config.js";
 
 const ready = ref(false);
 onMounted(() => {

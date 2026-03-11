@@ -3,23 +3,14 @@
     <div class="section-inner">
       <h2 class="section-heading">ABOUT</h2>
       <div class="about-content">
-        <p>
-          I'm a 20-year-old developer and designer who switched careers to CS in
-          2021 and never looked back. I build products, lead communities, and
-          constantly explore the intersection of design and technology.
-        </p>
-        <p>
-          Currently focused on building
-          <a href="https://thealphaones.com" target="_blank">TheAlphaOnes</a>
-          — a developer community and SaaS platform. Previously won hackathons,
-          judged them, taught classes, and got nicknamed Batman along the way.
-        </p>
+        <p v-for="(para, i) in about.paragraphs" :key="i" v-html="para"></p>
       </div>
     </div>
   </section>
 </template>
 
 <script setup>
+import { about } from "../../portfolio.config.js";
 defineProps({ isVisible: Object });
 </script>
 

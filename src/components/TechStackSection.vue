@@ -18,30 +18,8 @@
 </template>
 
 <script setup>
+import { techStack as stack } from "../../portfolio.config.js";
 defineProps({ isVisible: Object });
-
-const stack = [
-  {
-    name: "Languages",
-    items: ["JavaScript", "TypeScript", "Python", "Go", "SQL", "HTML/CSS"],
-  },
-  {
-    name: "Frontend",
-    items: ["Vue.js", "Nuxt", "React", "React Native", "Tailwind CSS", "Three.js", "Figma"],
-  },
-  {
-    name: "Backend & Auth",
-    items: ["Node.js", "Hono", "Express", "Go", "Postgres", "Redis", "Drizzle ORM", "Supabase", "Better Auth"],
-  },
-  {
-    name: "AI & Tools",
-    items: ["Ollama", "AI SDK", "Langchain", "OpenAI", "Git", "Docker", "Vercel", "Cloudflare", "Electron", "OpenRouter", "Cloudflare",],
-  },
-  {
-    name: "Hardware & IoT",
-    items: ["IoT", "Arduino", "ESP32", "Raspberry Pi", "OLED Screens", "Servos", "Sensors"],
-  },
-];
 </script>
 
 <style scoped>

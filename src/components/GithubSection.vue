@@ -4,9 +4,9 @@
       <h2 class="section-heading">GITHUB</h2>
       <div class="github-grid-wrap">
         <img src="https://ghchart.rshah.org/2E3031/NormVg" alt="NormVg GitHub contribution chart" class="github-grid" />
-        <a href="https://github.com/NormVg" target="_blank" class="github-link">
+        <a :href="identity.github" target="_blank" class="github-link">
           <Github :size="13" />
-          @NormVg
+          {{ identity.githubHandle }}
           <ArrowUpRight :size="13" />
         </a>
       </div>
@@ -16,6 +16,7 @@
 
 <script setup>
 import { Github, ArrowUpRight } from "lucide-vue-next";
+import { identity } from "../../portfolio.config.js";
 
 defineProps({ isVisible: Object });
 </script>

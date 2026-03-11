@@ -3,13 +3,13 @@
     <div class="section-inner">
       <h2 class="section-heading">EXPERIENCE</h2>
       <div class="experience-list">
-        <div v-for="(exp, i) in experiences" :key="exp.title" class="exp-card"
+        <div v-for="(exp, i) in experiences" :key="exp.role" class="exp-card"
           :style="{ animationDelay: `${i * 120}ms` }">
           <div class="exp-index">{{ String(i + 1).padStart(2, '0') }}</div>
           <div class="exp-body">
             <div class="exp-header">
               <div>
-                <p class="exp-title">{{ exp.title }}</p>
+                <p class="exp-title">{{ exp.role }}</p>
                 <p class="exp-company">@ {{ exp.company }}</p>
               </div>
               <span class="exp-period">{{ exp.period }}</span>
@@ -26,26 +26,8 @@
 </template>
 
 <script setup>
+import { experience as experiences } from "../../portfolio.config.js";
 defineProps({ isVisible: Object });
-
-const experiences = [
-  {
-    title: "Founder & Full-Stack Developer",
-    company: "TheAlphaOnes",
-    period: "2024 – Present",
-    description:
-      "Built and launched a build-in-public developer community & SaaS platform from scratch. Designed the system architecture, shipping product features solo.",
-    tags: ["Nuxt", "Hono", "Postgres", "AI", "Drizzle ORM"],
-  },
-  {
-    title: "Solo Developer",
-    company: "Kraken Editor",
-    period: "2023 – 2024",
-    description:
-      "Designed and built a fully custom code editor as a desktop app from the ground up — covering syntax highlighting, theming, and custom UI components.",
-    tags: ["Electron", "Vue", "Node.js"],
-  },
-];
 </script>
 
 <style scoped>

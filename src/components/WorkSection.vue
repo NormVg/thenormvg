@@ -35,6 +35,7 @@ import imgFold from "@/assets/code_img/fold.png";
 import imgOpenlist from "@/assets/code_img/openlist.png";
 import imgOpendocs from "@/assets/code_img/opendocs.png";
 import imgKraken from "@/assets/code_img/kraken.gif";
+import imgAgentBrowser from "@/assets/code_img/agent-browser.png";
 import imgCassette from "@/assets/code_img/cassette.png";
 
 defineProps({ isVisible: Object });
@@ -46,6 +47,7 @@ const imageMap = {
   openlist: imgOpenlist,
   opendocs: imgOpendocs,
   kraken: imgKraken,
+  agentbrowser: imgAgentBrowser,
   cassette: imgCassette,
 };
 

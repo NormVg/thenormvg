@@ -2,16 +2,16 @@
  * portfolio.config.js
  * ─────────────────────────────────────────────────────────────
  * Single source of truth for all portfolio content.
- * Edit this file to update your portfolio — no component editing required.
+ * Edit this file to update your portfolio - no component editing required.
  * ─────────────────────────────────────────────────────────────
  */
 
 // ── Identity ──────────────────────────────────────────────────
 export const identity = {
   name: "Vishnu Gupta",
-  subtitle: "FULL-STACK DEVELOPER, UI DESIGNER & AI BUILDER",
+  subtitle: "FULL-STACK DEVELOPER · PRODUCT BUILDER · AI EXPERIMENTER",
   description:
-    "Crafting digital experiences that merge clean aesthetics with robust engineering. Building tools for the future at",
+    "Crafting digital experiences that merge clean aesthetics with robust engineering. Currently building tools for the future at",
   descriptionLinkText: "TheAlphaOnes",
   descriptionLinkHref: "https://taohq.org",
   github: "https://github.com/NormVg",
@@ -25,8 +25,8 @@ export const identity = {
 // ── About ─────────────────────────────────────────────────────
 export const about = {
   paragraphs: [
-    "I'm a 20-year-old developer and designer who switched careers to CS in 2021 and never looked back. I build products, lead communities, and constantly explore the intersection of design and technology.",
-    `Currently focused on building <a href="https://taohq.org" target="_blank">TheAlphaOnes</a> — a startup in Making Building Products to better your lifestyle of future. Previously won hackathons, judged them, taught classes, and got nicknamed Batman along the way.`,
+    "I'm a developer and designer who switched to computer science in 2021 and never looked back. I enjoy building products, experimenting with new ideas, and exploring the intersection of design and technology.",
+    `Currently focused on building <a href="https://taohq.org" target="_blank">TheAlphaOnes</a> — a startup in the making focused on creating products that shape the lifestyle of the future. Along the way I've won hackathons, judged them, taught classes, and somehow earned the nickname Batman.`,
   ],
 };
 
@@ -38,19 +38,56 @@ export const techStack = [
   },
   {
     name: "Frontend",
-    items: ["Vue.js", "Nuxt", "React", "React Native", "Tailwind CSS", "Three.js", "Figma"],
+    items: [
+      "Vue.js",
+      "Nuxt",
+      "React",
+      "React Native",
+      "Tailwind CSS",
+      "Three.js",
+      "Figma",
+    ],
   },
   {
     name: "Backend & Auth",
-    items: ["Node.js", "Hono", "Express", "Go", "Postgres", "Redis", "Drizzle ORM", "Supabase", "Better Auth"],
+    items: [
+      "Node.js",
+      "Hono",
+      "Express",
+      "Go",
+      "Postgres",
+      "Redis",
+      "Drizzle ORM",
+      "Supabase",
+      "Better Auth",
+    ],
   },
   {
     name: "AI & Tools",
-    items: ["Ollama", "AI SDK", "Langchain", "OpenAI", "Git", "Docker", "Vercel", "Cloudflare", "Electron", "OpenRouter"],
+    items: [
+      "Ollama",
+      "AI SDK",
+      "Langchain",
+      "OpenAI",
+      "Git",
+      "Docker",
+      "Vercel",
+      "Cloudflare",
+      "Electron",
+      "OpenRouter",
+    ],
   },
   {
     name: "Hardware & IoT",
-    items: ["IoT", "Arduino", "ESP32", "Raspberry Pi", "OLED Screens", "Servos", "Sensors"],
+    items: [
+      "IoT",
+      "Arduino",
+      "ESP32",
+      "Raspberry Pi",
+      "OLED Screens",
+      "Servos",
+      "Sensors",
+    ],
   },
 ];
 
@@ -71,7 +108,7 @@ export const experience = [
     company: "TheAlphaOnes",
     period: "2022 – Present",
     description:
-      "Building tools, AI systems, and experimental products aimed at shaping the lifestyle of the future. Focused on rapid MVP development, AI-first architecture, and building systems for the future.",
+      "Building developer tools, AI systems, and experimental products aimed at shaping the lifestyle of the future. Focused on rapid MVP development, AI-first architecture, and building systems that push technology forward.",
     tags: [
       "Developer Tools",
       "AI Systems",
@@ -81,11 +118,38 @@ export const experience = [
     ],
   },
   {
+    role: "Founder",
+    company: "Fold.tao",
+    period: "2025 – Present",
+    description:
+      "Building a private mobile space to capture and preserve memories through photos, videos, audio, and text — organized into a personal timeline.",
+    tags: [
+      "Mobile Development",
+      "React Native",
+      "Privacy-focused",
+      "Personal Archiving",
+      "Media Management",
+    ],
+  },
+  {
+    role: "Manager",
+    company: "CoffeeCodes",
+    period: "5/2025 – 8/2025",
+    description:
+      "Led backend development and system architecture while managing a small development team. Focused on building scalable APIs and improving engineering workflows.",
+    tags: [
+      "Backend Development",
+      "Team Leadership",
+      "System Architecture",
+      "API Development",
+    ],
+  },
+  {
     role: "Leader",
     company: "TheAlphaOnes Community",
     period: "2020 – 2024",
     description:
-      "Started and grew an open discord community for developers interested in building in public, collaborating on projects, and exploring new technologies together.",
+      "Started and grew an open Discord community for developers interested in building in public, collaborating on projects, and exploring new technologies together.",
     tags: [
       "Developer Community",
       "Building in Public",
@@ -96,34 +160,52 @@ export const experience = [
 ];
 
 // ── Work / Projects ───────────────────────────────────────────
-// Images are imported in WorkSection.vue and passed via config keys.
-// Add a matching `imageKey` string that maps to an import in WorkSection.
 export const projects = [
   {
     title: "COOK CLI",
-    description: "An everyday CLI tool for you, like a swiss army knife? But for developers.",
-    tags: ["Go", "CLI", "Developer Tools"],
-    link: "https://github.com/NormVg/cook",
+    description:
+      "A powerful CLI tool for modern developers that combines template management, command automation, and development utilities into one workflow.",
+    tags: ["Python", "CLI", "Developer Tools", "Template Management", "Nuxt"],
+    link: "https://github.com/TheAlphaOnes/cook-cli",
     imageKey: "cook",
   },
   {
-    title: "Fold Admin",
-    description: "Dashboard and administrative engine for managing waitlists, user analytics, and system integrations.",
-    tags: ["Nuxt", "PWA", "Drizzle ORM", "Postgres"],
-    link: "https://github.com/NormVg/fold",
+    title: "Fold",
+    description:
+      "A private mobile space to capture and preserve memories through photos, videos, audio, and text — organized into a personal timeline.",
+    tags: [
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "Hono",
+      "Drizzle ORM",
+      "Neon Postgres",
+      "AWS S3",
+    ],
+    link: "https://github.com/NormVg/fold.phone",
     imageKey: "fold",
   },
   {
     title: "Openlist",
-    description: "Deploy a premium waitlist in seconds. Capture leads with style.",
-    tags: ["Nuxt", "Postgres", "Better-Auth", "Supabase", "Three.js", "dodopayments"],
+    description:
+      "Waitlist infrastructure for product teams. Launch a premium waitlist with referrals, analytics, and developer-friendly APIs.",
+    tags: ["Nuxt", "Postgres", "Better-Auth", "API-First", "Referral Engine"],
     link: "https://openlist.in",
     imageKey: "openlist",
   },
   {
+    title: "Browser Agent",
+    description:
+      "Autonomous browser agent that plans a full action chain upfront and executes in bulk — only replanning on failure or dynamic boundaries. Built on Playwright with a two-pass LLM planner, capped memory, and smart URL shortcuts for token-efficient web automation.",
+    tags: ["Playwright", "LLM", "OpenRouter", "Chain-Mode", "Browser-Automation"],
+    link: "https://github.com/NormVg/agent-browser",
+    imageKey: "browser-agent",
+  },
+  {
     title: "OpenDocs",
-    description: "Open-source documentation generator for modern web projects.",
-    tags: ["TypeScript", "Vue", "Documentation"],
+    description:
+      "A minimalist desktop PDF reader with built-in AI chat that enables context-aware conversations with documents.",
+    tags: ["Electron", "Vue 3", "TypeScript", "Gemini AI", "PDF.js"],
     link: "https://github.com/NormVg/opendocs",
     imageKey: "opendocs",
   },
@@ -133,6 +215,13 @@ export const projects = [
     tags: ["Electron", "Vue", "Node.js"],
     link: "https://github.com/NormVg/kraken",
     imageKey: "kraken",
+  },
+  {
+    title: "Agent Browser",
+    description: "An AI-powered automated browser and data assistant.",
+    tags: ["LLM", "Playwright", "Web Automation", "Vue"],
+    link: "https://github.com/NormVg/agent-browser",
+    imageKey: "agentbrowser",
   },
   {
     title: "Cassette",
@@ -151,68 +240,72 @@ export const blogPosts = [
     tag: "Engineering",
     date: "2024",
     link: "https://thenormvg.substack.com/p/kraken-a-code-editor-with-a-new-flavor",
-  }
+  },
 ];
 
-export const blogViewAllLink = "https://thenormvg.substack.com/?r=2r6jxt&utm_campaign=pub-share-checklist";
+export const blogViewAllLink =
+  "https://thenormvg.substack.com/?r=2r6jxt&utm_campaign=pub-share-checklist";
 
 // ── Freelance / Available For ─────────────────────────────────
 export const freelanceOfferings = [
   {
     title: "Freelance",
-    description: "Full-stack web apps, SaaS platforms, dashboards, and landing pages.",
+    description:
+      "Full-stack web applications, SaaS platforms, dashboards, and landing pages.",
     color: "rgba(180, 220, 255, 0.7)",
   },
   {
     title: "Collaboration",
-    description: "Open to co-founding, open-source projects, and product partnerships.",
+    description:
+      "Open to co-founding opportunities, open-source projects, and product partnerships.",
     color: "rgba(200, 180, 255, 0.7)",
   },
   {
     title: "Consulting",
-    description: "Technical advisory, architecture reviews, and code audits.",
+    description:
+      "Technical advisory, architecture reviews, and engineering guidance.",
     color: "rgba(180, 255, 210, 0.7)",
   },
 ];
 
 export const freelanceCTA = {
-  text: "Open to work — let's build something great together.",
+  text: "Open to building interesting things with great people.",
   buttonLabel: "Get in touch",
   buttonHref: "#contact",
 };
 
 // ── Spotify ───────────────────────────────────────────────────
 export const spotify = {
-  // Spotify embed URL for the track. Replace the track ID to update.
-  embedUrl: "https://open.spotify.com/embed/track/1hlgWN4erCHPTVV7qhY6we?utm_source=generator",
+  embedUrl:
+    "https://open.spotify.com/embed/track/1hlgWN4erCHPTVV7qhY6we?utm_source=generator",
 };
 
 // ── Timeline / Journey ────────────────────────────────────────
-// Timeline data lives in src/assets/data/Timeline.json — edit that file to add/remove milestones.
-// If you prefer to move it here, replace the import in TimelineSection.vue with this array.
 export const journey = [
-  { id: 1, date: "29•10•2005", description: "Born with a creative bug in me." },
-  { id: 2, date: "xx•xx•2020", description: "Discovered my love for code" },
-  { id: 3, date: "20•12•2021", description: "Switched careers to CS" },
-  { id: 4, date: "31•1•2022", description: "Formed TheAlphaOnes" },
-  { id: 5, date: "9•10•2022", description: "First 10 members joined the team" },
-  { id: 6, date: "26•5•2023", description: "Got clarity on how to grow and learn" },
-  { id: 7, date: "19•6•2023", description: "Met a crazy, inspiring person" },
-  { id: 8, date: "21•7•2023", description: "Discord community took off" },
-  { id: 9, date: "7•10•2023", description: "Had my first interview" },
-  { id: 10, date: "28•10•2023", description: "Twitter blew up—1.5k+ followers!" },
-  { id: 11, date: "2•11•2023", description: "First business meeting (flopped)" },
-  { id: 12, date: "22•12•2023", description: "Taught my first class" },
-  { id: 13, date: "1•1•2024", description: "Switched fully to Linux" },
-  { id: 14, date: "15•3•2024", description: "First hackathon (failed)" },
-  { id: 15, date: "3•4•2024", description: "Won my second hackathon!" },
-  { id: 16, date: "3•7•2024", description: "Started my YouTube channel" },
-  { id: 17, date: "19•8•2024", description: "Got nicknamed BATMAN" },
-  { id: 18, date: "8•12•2024", description: "Judged the Cornucodia Hackathon" },
+  { id: 1, date: "29•10•2005", description: "Born with a creative bug." },
+  { id: 2, date: "xx•xx•2020", description: "Discovered my love for code." },
+  { id: 3, date: "20•12•2021", description: "Switched careers to computer science." },
+  { id: 4, date: "31•1•2022", description: "Formed TheAlphaOnes." },
+  { id: 5, date: "9•10•2022", description: "First 10 members joined the team." },
+  { id: 6, date: "26•5•2023", description: "Gained clarity on how to grow and learn." },
+  { id: 7, date: "21•7•2023", description: "Discord community started growing." },
+  { id: 8, date: "28•10•2023", description: "Twitter grew to 1.5k+ followers." },
+  { id: 9, date: "22•12•2023", description: "Taught my first class." },
+  { id: 10, date: "1•1•2024", description: "Switched fully to Linux." },
+  { id: 11, date: "3•4•2024", description: "Won my second hackathon." },
+  { id: 12, date: "3•7•2024", description: "Started my YouTube channel." },
+  { id: 13, date: "19•8•2024", description: "Got nicknamed BATMAN." },
+  { id: 14, date: "8•12•2024", description: "Judged the Cornucodia Hackathon." },
+  { id: 15, date: "20•4•2025", description: "Kraken editor went viral." },
+  { id: 16, date: "5•5•2025", description: "Joined CoffeeCodes as Manager and Backend Developer." },
+  { id: 17, date: "16•8•2025", description: "Started college." },
+  { id: 18, date: "15•12•2025", description: "Founded Fold.tao." },
+  { id: 19, date: "19•01•2026", description: "Started Studio.tao." },
+  { id: 20, date: "15•02•2026", description: "Did first investor pitch for Fold." },
 ];
 
 // ── Contact ───────────────────────────────────────────────────
 export const contact = {
   heading: "Let's build something.",
-  subtext: "Got an idea or just want to say hey? Reach out.",
+  subtext: "Have an idea or just want to say hello? Feel free to reach out.",
 };

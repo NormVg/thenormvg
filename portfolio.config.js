@@ -9,24 +9,24 @@
 // ── Identity ──────────────────────────────────────────────────
 export const identity = {
   name: "Vishnu Gupta",
-  subtitle: "FULL-STACK DEVELOPER, UI DESIGNER & AI ENTHUSIAST",
+  subtitle: "FULL-STACK DEVELOPER, UI DESIGNER & AI BUILDER",
   description:
     "Crafting digital experiences that merge clean aesthetics with robust engineering. Building tools for the future at",
   descriptionLinkText: "TheAlphaOnes",
-  descriptionLinkHref: "https://thealphaones.com",
+  descriptionLinkHref: "https://taohq.org",
   github: "https://github.com/NormVg",
   githubHandle: "@NormVg",
   twitter: "https://twitter.com/TheNormVg",
-  linkedin: "https://www.linkedin.com/in/vishnu-v-gupta/",
-  youtube: "#",
-  email: "mailto:hello@thealphaones.com",
+  linkedin: "https://www.linkedin.com/in/vishnu-gupta-ji/",
+  youtube: "https://www.youtube.com/@thenormvg",
+  email: "mailto:thenormvg.work@gmail.com",
 };
 
 // ── About ─────────────────────────────────────────────────────
 export const about = {
   paragraphs: [
     "I'm a 20-year-old developer and designer who switched careers to CS in 2021 and never looked back. I build products, lead communities, and constantly explore the intersection of design and technology.",
-    `Currently focused on building <a href="https://thealphaones.com" target="_blank">TheAlphaOnes</a> — a developer community and SaaS platform. Previously won hackathons, judged them, taught classes, and got nicknamed Batman along the way.`,
+    `Currently focused on building <a href="https://taohq.org" target="_blank">TheAlphaOnes</a> — a startup in Making Building Products to better your lifestyle of future. Previously won hackathons, judged them, taught classes, and got nicknamed Batman along the way.`,
   ],
 };
 
@@ -67,20 +67,31 @@ export const education = [
 // ── Experience ────────────────────────────────────────────────
 export const experience = [
   {
-    role: "Founder & Full-Stack Developer",
+    role: "Founder",
     company: "TheAlphaOnes",
-    period: "2024 – Present",
+    period: "2022 – Present",
     description:
-      "Built and launched a build-in-public developer community & SaaS platform from scratch. Designed the system architecture, shipping product features solo.",
-    tags: ["Nuxt", "Hono", "Postgres", "AI", "Drizzle ORM"],
+      "Building tools, AI systems, and experimental products aimed at shaping the lifestyle of the future. Focused on rapid MVP development, AI-first architecture, and building systems for the future.",
+    tags: [
+      "Developer Tools",
+      "AI Systems",
+      "Product Development",
+      "API Architecture",
+      "Rapid MVPs",
+    ],
   },
   {
-    role: "Solo Developer",
-    company: "Kraken Editor",
-    period: "2023 – 2024",
+    role: "Leader",
+    company: "TheAlphaOnes Community",
+    period: "2020 – 2024",
     description:
-      "Designed and built a fully custom code editor as a desktop app from the ground up — covering syntax highlighting, theming, and custom UI components.",
-    tags: ["Electron", "Vue", "Node.js"],
+      "Started and grew an open discord community for developers interested in building in public, collaborating on projects, and exploring new technologies together.",
+    tags: [
+      "Developer Community",
+      "Building in Public",
+      "Collaboration",
+      "Knowledge Sharing",
+    ],
   },
 ];
 
@@ -89,54 +100,61 @@ export const experience = [
 // Add a matching `imageKey` string that maps to an import in WorkSection.
 export const projects = [
   {
-    title: "TheAlphaOnes",
-    description: "A build-in-public developer community & SaaS platform.",
-    tags: ["Nuxt", "Hono", "Postgres", "AI"],
-    link: "https://thealphaones.com",
-    imageKey: "alpha",
-  },
-  {
-    title: "Kraken Editor",
-    description: "A code editor with a new flavor — built from scratch.",
-    tags: ["Electron", "Vue", "Node.js"],
-    link: "#",
-    imageKey: "kraken",
+    title: "COOK CLI",
+    description: "An everyday CLI tool for you, like a swiss army knife? But for developers.",
+    tags: ["Go", "CLI", "Developer Tools"],
+    link: "https://github.com/NormVg/cook",
+    imageKey: "cook",
   },
   {
     title: "Fold Admin",
-    description: "Dashboard for managing waitlists, analytics, and integrations.",
-    tags: ["Nuxt", "PWA", "Drizzle ORM"],
-    link: "#",
+    description: "Dashboard and administrative engine for managing waitlists, user analytics, and system integrations.",
+    tags: ["Nuxt", "PWA", "Drizzle ORM", "Postgres"],
+    link: "https://github.com/NormVg/fold",
     imageKey: "fold",
   },
+  {
+    title: "Openlist",
+    description: "Deploy a premium waitlist in seconds. Capture leads with style.",
+    tags: ["Nuxt", "Postgres", "Better-Auth", "Supabase", "Three.js", "dodopayments"],
+    link: "https://openlist.in",
+    imageKey: "openlist",
+  },
+  {
+    title: "OpenDocs",
+    description: "Open-source documentation generator for modern web projects.",
+    tags: ["TypeScript", "Vue", "Documentation"],
+    link: "https://github.com/NormVg/opendocs",
+    imageKey: "opendocs",
+  },
+  {
+    title: "Kraken Editor",
+    description: "A code editor with a new flavor — built from scratch to bypass standard constraints.",
+    tags: ["Electron", "Vue", "Node.js"],
+    link: "https://github.com/NormVg/kraken",
+    imageKey: "kraken",
+  },
+  {
+    title: "Cassette",
+    description: "A retro-styled audio player interface and music experience.",
+    tags: ["Vue", "Web Audio API", "Frontend"],
+    link: "https://github.com/NormVg/cassette",
+    imageKey: "cassette",
+  }
 ];
 
 // ── Writing / Blog ────────────────────────────────────────────
 export const blogPosts = [
   {
-    title: "Building a SaaS from Scratch — What I Learned",
-    desc: "Reflections on shipping TheAlphaOnes solo, from idea to paying users.",
+    title: "Kraken: A Code Editor with a New Flavor",
+    desc: "Exploring the philosophy and design patterns behind the Kraken code editor.",
     tag: "Engineering",
-    date: "2025",
-    link: "https://taohq.org/blog",
-  },
-  {
-    title: "Why I Ditched VS Code and Built My Own Editor",
-    desc: "The story behind Kraken Editor — and why building your tools changes how you think.",
-    tag: "Dev",
     date: "2024",
-    link: "https://taohq.org/blog",
-  },
-  {
-    title: "IoT at Home — Automating My Room with ESP32",
-    desc: "How I wired up sensors, OLED displays, and servos to build a smart room setup.",
-    tag: "IoT",
-    date: "2024",
-    link: "https://taohq.org/blog",
-  },
+    link: "https://thenormvg.substack.com/p/kraken-a-code-editor-with-a-new-flavor",
+  }
 ];
 
-export const blogViewAllLink = "https://taohq.org/blog";
+export const blogViewAllLink = "https://thenormvg.substack.com/?r=2r6jxt&utm_campaign=pub-share-checklist";
 
 // ── Freelance / Available For ─────────────────────────────────
 export const freelanceOfferings = [

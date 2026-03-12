@@ -30,17 +30,23 @@
 import { ArrowUpRight } from "lucide-vue-next";
 import { projects as projectConfig } from "../../portfolio.config.js";
 
-import imgAlpha from "@/assets/code_img/def1.gif";
+import imgCook from "@/assets/code_img/cook.png";
+import imgFold from "@/assets/code_img/fold.png";
+import imgOpenlist from "@/assets/code_img/openlist.png";
+import imgOpendocs from "@/assets/code_img/opendocs.png";
 import imgKraken from "@/assets/code_img/kraken.gif";
-import imgFold from "@/assets/code_img/def.gif";
+import imgCassette from "@/assets/code_img/cassette.png";
 
 defineProps({ isVisible: Object });
 
 // Map imageKey strings from config to the actual imported assets
 const imageMap = {
-  alpha: imgAlpha,
-  kraken: imgKraken,
+  cook: imgCook,
   fold: imgFold,
+  openlist: imgOpenlist,
+  opendocs: imgOpendocs,
+  kraken: imgKraken,
+  cassette: imgCassette,
 };
 
 // Resolve images onto each project object
@@ -127,6 +133,7 @@ const projects = projectConfig.map((p) => ({
 /* ── Image side ─────────────────────────────────────────────── */
 .project-img-wrapper {
   flex: 0 0 280px;
+  aspect-ratio: 3 / 2;
   /* Fixed width, won't grow or shrink */
   position: relative;
   overflow: hidden;
@@ -161,7 +168,7 @@ const projects = projectConfig.map((p) => ({
   .project-img-wrapper {
     flex: none;
     width: 100%;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 3 / 2;
     position: relative;
     border-left: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);

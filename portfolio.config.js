@@ -182,7 +182,7 @@ export const projects = [
       "Neon Postgres",
       "AWS S3",
     ],
-    link: "https://github.com/NormVg/fold.phone",
+    link: "https://fold.taohq.org",
     imageKey: "fold",
   },
   {
@@ -199,7 +199,7 @@ export const projects = [
       "Autonomous browser agent that plans a full action chain upfront and executes in bulk — only replanning on failure or dynamic boundaries. Built on Playwright with a two-pass LLM planner, capped memory, and smart URL shortcuts for token-efficient web automation.",
     tags: ["Playwright", "LLM", "OpenRouter", "Chain-Mode", "Browser-Automation"],
     link: "https://github.com/NormVg/agent-browser",
-    imageKey: "browser-agent",
+    imageKey: "agentbrowser",
   },
   {
     title: "OpenDocs",
@@ -215,13 +215,7 @@ export const projects = [
     tags: ["Electron", "Vue", "Node.js"],
     link: "https://github.com/NormVg/kraken",
     imageKey: "kraken",
-  },
-  {
-    title: "Agent Browser",
-    description: "An AI-powered automated browser and data assistant.",
-    tags: ["LLM", "Playwright", "Web Automation", "Vue"],
-    link: "https://github.com/NormVg/agent-browser",
-    imageKey: "agentbrowser",
+
   },
   {
     title: "Cassette",

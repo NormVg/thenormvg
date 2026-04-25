@@ -37,6 +37,8 @@ import imgOpendocs from "@/assets/code_img/opendocs.png";
 import imgKraken from "@/assets/code_img/kraken.gif";
 import imgAgentBrowser from "@/assets/code_img/agent-browser.png";
 import imgCassette from "@/assets/code_img/cassette.png";
+import imgBubblesMail from "@/assets/code_img/bubbles.mail.png";
+import imgBubblesAi from "@/assets/bubble-discord.png";
 
 defineProps({ isVisible: Object });
 
@@ -49,6 +51,8 @@ const imageMap = {
   kraken: imgKraken,
   agentbrowser: imgAgentBrowser,
   cassette: imgCassette,
+  bubblesmail: imgBubblesMail,
+  bubblesai: imgBubblesAi,
 };
 
 // Resolve images onto each project object

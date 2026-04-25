@@ -170,6 +170,14 @@ export const projects = [
     imageKey: "cook",
   },
   {
+    title: "Bubbles.ai",
+    description:
+      "An autonomous Discord agent powered by Ollama + AI SDK, with tool loops, skills, and workspace-isolated execution.",
+    tags: ["Discord Bot", "Ollama", "AI SDK", "Agent Skills", "Automation"],
+    link: "https://github.com/NormVg/bubbles.ai",
+    imageKey: "bubblesai",
+  },
+  {
     title: "Fold",
     description:
       "A private mobile space to capture and preserve memories through photos, videos, audio, and text — organized into a personal timeline.",
@@ -184,6 +192,13 @@ export const projects = [
     ],
     link: "https://fold.taohq.org",
     imageKey: "fold",
+  },
+  {
+    title: "Bubbles Mail",
+    description: "An experimental mail project focused on building a cleaner messaging experience.",
+    tags: ["Mail", "Web App", "Experimental"],
+    link: "https://github.com/NormVg/bubbles.mail.git",
+    imageKey: "bubblesmail",
   },
   {
     title: "Openlist",

@@ -67,7 +67,7 @@ router.afterEach((to) => {
     const ogDesc = document.querySelector('meta[property="og:description"]');
     if (ogDesc) ogDesc.setAttribute('content', to.meta.description);
 
-    const twitterDesc = document.querySelector('meta[property="twitter:description"]');
+    const twitterDesc = document.querySelector('meta[name="twitter:description"]');
     if (twitterDesc) twitterDesc.setAttribute('content', to.meta.description);
   }
 })

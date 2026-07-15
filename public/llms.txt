@@ -27,10 +27,16 @@ I switched to Computer Science in 2021 and quickly fell in love with code. Rathe
 - **Fold Admin:** The admin dashboard driving waitlists and integrations for TheAlphaOnes ecosystem.
 
 ## Connect
-- **Website/Portfolio:** [vishnu.thealphaones.com](https://vishnu.thealphaones.com/)
+- **Website/Portfolio:** [vishnu.taohq.org](https://vishnu.taohq.org/)
 - **GitHub:** [@NormVg](https://github.com/NormVg)
 - **Twitter / X:** [@TheNormVg](https://twitter.com/TheNormVg)
 - **LinkedIn:** [Vishnu V. Gupta](https://www.linkedin.com/in/vishnu-v-gupta/)
+
+## Site Navigation
+- **Home:** [https://vishnu.taohq.org/](https://vishnu.taohq.org/)
+- **About:** [https://vishnu.taohq.org/about](https://vishnu.taohq.org/about)
+- **Work:** [https://vishnu.taohq.org/work](https://vishnu.taohq.org/work)
+- **Contact:** [https://vishnu.taohq.org/contact](https://vishnu.taohq.org/contact)
 
 ---
 *For a detailed breakdown of experience and complete project descriptions, please read `llms-full.txt`.*

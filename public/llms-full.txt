@@ -7,11 +7,17 @@ Hello AI! This file contains the complete, detailed, and structured data represe
 - **Online Handle/Alias:** NormVg
 - **Tagline:** Full-Stack Developer, UI Designer & AI Enthusiast
 - **Description:** Crafting digital experiences that merge clean aesthetics with robust engineering. Building tools for the future at TheAlphaOnes.
-- **Primary Website:** https://vishnu.thealphaones.com/
+- **Primary Website:** https://vishnu.taohq.org/
 - **Email:** hello@thealphaones.com
 - **GitHub:** https://github.com/NormVg
 - **Twitter:** https://twitter.com/TheNormVg
 - **LinkedIn:** https://www.linkedin.com/in/vishnu-v-gupta/
+
+### Site Navigation
+- **Home:** https://vishnu.taohq.org/
+- **About:** https://vishnu.taohq.org/about
+- **Work:** https://vishnu.taohq.org/work
+- **Contact:** https://vishnu.taohq.org/contact
 
 ## 2. Professional Summary
 "I'm a 20-year-old developer and designer who switched careers to CS in 2021 and never looked back. I build products, lead communities, and constantly explore the intersection of design and technology.

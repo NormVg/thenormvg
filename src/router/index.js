@@ -21,23 +21,55 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView,
+      meta: {
+        title: 'Vishnu Gupta | Full-Stack Developer & UI Designer',
+        description: 'Portfolio of Vishnu Gupta (NormVg) — a 20-year-old Full-Stack Developer, UI Designer, and AI enthusiast. Founder of TheAlphaOnes.'
+      }
     },
     {
       path: '/about',
       name: 'about',
       component: AboutView,
+      meta: {
+        title: 'About | Vishnu Gupta',
+        description: 'Learn more about Vishnu Gupta, his tech stack, experience, education, and journey as a software engineer and UI designer.'
+      }
     },
     {
       path: '/work',
       name: 'work',
       component: WorkView,
+      meta: {
+        title: 'Work & Projects | Vishnu Gupta',
+        description: 'Explore the latest projects, work, and open-source contributions by Vishnu Gupta (NormVg), including TheAlphaOnes and Kraken Editor.'
+      }
     },
     {
       path: '/contact',
       name: 'contact',
       component: ContactView,
+      meta: {
+        title: 'Contact | Vishnu Gupta',
+        description: 'Get in touch with Vishnu Gupta for freelance opportunities, collaborations, or just to say hi.'
+      }
     }
   ],
+})
+
+router.afterEach((to) => {
+  if (to.meta.title) {
+    document.title = to.meta.title;
+  }
+  if (to.meta.description) {
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute('content', to.meta.description);
+    
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    if (ogDesc) ogDesc.setAttribute('content', to.meta.description);
+    
+    const twitterDesc = document.querySelector('meta[property="twitter:description"]');
+    if (twitterDesc) twitterDesc.setAttribute('content', to.meta.description);
+  }
 })
 
 export default router

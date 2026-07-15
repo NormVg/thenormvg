@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://vishnu.thealphaones.com/sitemap.xml
+Sitemap: https://vishnu.taohq.org/sitemap.xml

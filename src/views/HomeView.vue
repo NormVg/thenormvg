@@ -44,12 +44,6 @@ const { isVisible } = useScrollReveal();
     <!-- Links / Contact -->
     <ContactSection :isVisible="isVisible" />
     
-    <!-- SEO Footer -->
-    <nav class="seo-footer">
-      <RouterLink to="/about">About</RouterLink>
-      <RouterLink to="/work">Work</RouterLink>
-      <RouterLink to="/contact">Contact</RouterLink>
-    </nav>
     <div style="height: 120px"></div>
   </div>
 </template>
@@ -122,31 +116,7 @@ section[data-animate].visible {
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
 }
 
-/* ═══════════════════════════════════════════════════════════
-   SEO FOOTER
-   ═══════════════════════════════════════════════════════════ */
-.seo-footer {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-top: 60px;
-  padding-top: 40px;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-}
 
-.seo-footer a {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--color-text-muted);
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  transition: color var(--transition-base);
-}
-
-.seo-footer a:hover {
-  color: var(--color-text);
-}
 
 /* ═══════════════════════════════════════════════════════════
    RESPONSIVE

@@ -14,7 +14,7 @@
   --font-display: 'Italianno', cursive;
   --font-heading: 'Julius Sans One', sans-serif;
   --font-body: 'K2D', sans-serif;
-  --font-mono: 'VT323', monospace;
+  --font-mono: 'Roboto Mono', monospace;
 
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);

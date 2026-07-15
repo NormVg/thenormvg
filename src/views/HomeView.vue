@@ -5,7 +5,7 @@ import AboutSection from "@/components/AboutSection.vue";
 import SpotifySection from "@/components/SpotifySection.vue";
 import WorkSection from "@/components/WorkSection.vue";
 import GithubSection from "@/components/GithubSection.vue";
-import BlogSection from "@/components/BlogSection.vue";
+// import BlogSection from "@/components/BlogSection.vue";
 import TechStackSection from "@/components/TechStackSection.vue";
 import ExperienceSection from "@/components/ExperienceSection.vue";
 import EducationSection from "@/components/EducationSection.vue";
@@ -28,8 +28,8 @@ const { isVisible } = useScrollReveal();
     <WorkSection :isVisible="isVisible" />
     <!-- GitHub -->
     <GithubSection :isVisible="isVisible" />
-    <!-- Writing -->
-    <BlogSection :isVisible="isVisible" />
+    <!-- Writing 
+    <BlogSection :isVisible="isVisible" /> -->
     <!-- Tech Stack -->
     <TechStackSection :isVisible="isVisible" />
     <!-- Experience -->
@@ -79,7 +79,7 @@ section[data-animate].visible {
 
 .section-heading {
   font-family: var(--font-heading);
-  font-size: 13px;
+  font-size: 16px;
   letter-spacing: 5px;
   color: var(--color-text-muted);
   margin-bottom: 40px;
@@ -139,7 +139,7 @@ section[data-animate].visible {
 
   .section-heading {
     margin-bottom: 30px;
-    font-size: 11px;
+    font-size: 14px;
     letter-spacing: 5px;
   }
 }

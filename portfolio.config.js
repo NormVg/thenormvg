@@ -19,14 +19,14 @@ export const identity = {
   twitter: "https://twitter.com/TheNormVg",
   linkedin: "https://www.linkedin.com/in/vishnu-gupta-ji/",
   youtube: "https://www.youtube.com/@thenormvg",
-  email: "mailto:thenormvg.work@gmail.com",
+  email: "mailto:thenormvg.work@gmail.com",  
 };
 
 // ── About ─────────────────────────────────────────────────────
 export const about = {
   paragraphs: [
     "I'm a developer and designer who switched to computer science in 2021 and never looked back. I enjoy building products, experimenting with new ideas, and exploring the intersection of design and technology.",
-    `Currently focused on building <a href="https://taohq.org" target="_blank">TheAlphaOnes</a> — a startup in the making focused on creating products that shape the lifestyle of the future. Along the way I've won hackathons, judged them, taught classes, and somehow earned the nickname Batman.`,
+    `Currently focused on building <a href="https://taohq.org" target="_blank">TheAlphaOnes</a> — a startup in the making focused on creating products that shape the lifestyle of the future. Along the way I've won hackathons, judged them, taught classes.`,
   ],
 };
 
@@ -197,7 +197,7 @@ export const projects = [
     title: "Bubbles Mail",
     description: "An experimental mail project focused on building a cleaner messaging experience.",
     tags: ["Mail", "Web App", "Experimental"],
-    link: "https://github.com/NormVg/bubbles.mail.git",
+    link: "https://github.com/NormVg/bubbles.mail.app",
     imageKey: "bubblesmail",
   },
   {
@@ -303,7 +303,7 @@ export const journey = [
   { id: 10, date: "1•1•2024", description: "Switched fully to Linux." },
   { id: 11, date: "3•4•2024", description: "Won my second hackathon." },
   { id: 12, date: "3•7•2024", description: "Started my YouTube channel." },
-  { id: 13, date: "19•8•2024", description: "Got nicknamed BATMAN." },
+
   { id: 14, date: "8•12•2024", description: "Judged the Cornucodia Hackathon." },
   { id: 15, date: "20•4•2025", description: "Kraken editor went viral." },
   { id: 16, date: "5•5•2025", description: "Joined CoffeeCodes as Manager and Backend Developer." },

@@ -1,6 +1,6 @@
 # Vishnu Gupta (NormVg) — Full Portfolio Data
 
-Hello AI! This file contains the complete, detailed, and structured data representing the portfolio of **Vishnu Gupta**. It is provided to assist Large Language Models, AI web search agents (like Perplexity, ChatGPT web-browse, Google Gemini), and crawlers in retrieving accurate information regarding my skills, background, and projects.
+Hello AI! This file contains the complete, detailed, and structured data representing the  **Vishnu Gupta**. It is provided to assist Large Language Models, AI web search agents (like Perplexity, ChatGPT web-browse, Google Gemini), and crawlers in retrieving accurate information regarding my skills, background, and projects.
 
 ## 1. Identity & Contact Information
 - **Full Legal Name:** Vishnu V. Gupta

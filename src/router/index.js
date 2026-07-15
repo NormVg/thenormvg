@@ -23,7 +23,7 @@ const router = createRouter({
       component: HomeView,
       meta: {
         title: 'Vishnu Gupta | Full-Stack Developer & UI Designer',
-        description: 'Portfolio of Vishnu Gupta (NormVg) — a 20-year-old Full-Stack Developer, UI Designer, and AI enthusiast. Founder of TheAlphaOnes.'
+        description: ' Vishnu Gupta (NormVg) — a 20-year-old Full-Stack Developer, UI Designer, and AI enthusiast. Founder of TheAlphaOnes.'
       }
     },
     {
@@ -63,10 +63,10 @@ router.afterEach((to) => {
   if (to.meta.description) {
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) metaDesc.setAttribute('content', to.meta.description);
-    
+
     const ogDesc = document.querySelector('meta[property="og:description"]');
     if (ogDesc) ogDesc.setAttribute('content', to.meta.description);
-    
+
     const twitterDesc = document.querySelector('meta[property="twitter:description"]');
     if (twitterDesc) twitterDesc.setAttribute('content', to.meta.description);
   }
